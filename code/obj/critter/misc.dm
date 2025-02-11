@@ -385,6 +385,77 @@
 
 		return 1
 
+/obj/critter/spacescorpion
+	name = "space scorpion"
+	desc = "A gigantic looking scorpion."
+	icon_state = "spacescorpion"
+	critter_family = BUG
+	density = 1
+	health = 50
+	aggressive = 1
+	defensive = 1
+	wanderer = 1
+	opensdoors = OBJ_CRITTER_OPENS_DOORS_NONE
+	atkcarbon = 1
+	atksilicon = 1
+	firevuln = 0
+	brutevuln = 1
+	angertext = "snips at"
+	butcherable = 0
+	flying = 0
+
+	CritterDeath()
+		..()
+		src.reagents.add_reagent("toxin", 20, null)
+		src.reagents.add_reagent("neurotoxin", 80, null)
+		return
+
+	seek_target()
+		src.anchored = 0
+		for (var/mob/living/C in hearers(src.seekrange,src))
+			if ((C.name == src.oldtarget_name) && (world.time < src.last_found + 100)) continue
+			if (iscarbon(C) && !src.atkcarbon) continue
+			if (issilicon(C) && !src.atksilicon) continue
+			if (C.health < 0) continue
+			if (C in src.friends) continue
+			if (iscarbon(C) && src.atkcarbon) src.attack = 1
+			if (issilicon(C) && src.atksilicon) src.attack = 1
+
+			if (src.attack)
+				src.target = C
+				src.oldtarget_name = C.name
+				src.visible_message("<span class='combat'><b>[src]</b> charges at [C.name]!</span>")
+				src.task = "chasing"
+				break
+			else
+				continue
+
+	ChaseAttack(mob/M)
+		..()
+		if(!ON_COOLDOWN(src, "scorpion_ability", 12 SECONDS))
+			M.visible_message("<span class='combat'><B>[src]</B> stings [src.target]!</span>")
+			playsound(src.loc, "sound/impact_sounds/Generic_Stab_1.ogg", 50, 1)
+			M.reagents?.add_reagent("neurotoxin", 15)
+		else
+			random_brute_damage(M, rand(5,10),1)
+			M.visible_message("<span class='combat'><B>[src]</B> tackles [src.target] with its pincers!</span>")
+			playsound(src.loc, "sound/items/Wirecutter.ogg", 50, 0)
+			M.changeStatus("weakened", 4 SECONDS)
+			M.force_laydown_standup()
+
+	CritterAttack(mob/M)
+		if(!ON_COOLDOWN(src, "scorpion_ability", 12 SECONDS))
+			M.visible_message("<span class='combat'><B>[src]</B> stings [src.target]!</span>")
+			playsound(src.loc, "sound/impact_sounds/Generic_Stab_1.ogg", 50, 1)
+			M.reagents?.add_reagent("neurotoxin", 15)
+		else
+			random_brute_damage(M, rand(3,6),1)
+			M.visible_message("<span class='combat'><B>[src]</B> snips [src.target] with its pincers!</span>")
+			playsound(src.loc, "sound/items/Wirecutter.ogg", 50, 0)
+
+
+
+
 /obj/critter/spacebee
 	name = "space wasp"
 	desc = "A wasp in space."
