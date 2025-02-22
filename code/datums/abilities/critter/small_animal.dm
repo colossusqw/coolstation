@@ -194,12 +194,18 @@
 		var/mob/MT = target
 		holder.owner.visible_message("<span class='combat'><b>[holder.owner] stings [MT]!</b></span>",\
 		"<span class='combat'>You sting [MT]!</span>")
+		playsound(target, "sound/impact_sounds/Generic_Stab_1.ogg", 50, 1)
 		if (MT.reagents)
 			MT.reagents.add_reagent(venom1, amt1)
 			MT.reagents.add_reagent(venom2, amt2)
 		else // um idk??  do some damage w/e
 			MT.TakeDamageAccountArmor("All", rand(2,8), 0, 0, DAMAGE_STAB)
 		return 0
+
+	scorpion
+		cooldown = 120
+		venom2 = "neurotoxin"
+		amt2 = 15
 
 /datum/targetable/critter/hootat
 	name = "Hoot seductively"

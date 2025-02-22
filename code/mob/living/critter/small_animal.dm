@@ -1372,16 +1372,20 @@ var/list/mob_bird_species = list("smallowl" = /mob/living/critter/small_animal/b
 /mob/living/critter/small_animal/scorpion
 	name = "scorpion"
 	real_name = "scorpion"
-	desc = "Ack! Get it away! AAAAAAAA."
-	icon_state = "scorpion"
-	icon_state_dead = "scorpion-dead"
+	desc = "A big and dangerous looking fella."
+	icon_state = "spacescorpion"
+	icon_state_dead = "spacescorpion-dead"
 	speechverb_say = "clicks"
 	speechverb_exclaim = "screeches"
 	speechverb_ask = "chitters"
-	health_brute = 5
-	health_burn = 5
-	flags = TABLEPASS | DOORPASS
+	health_brute = 50
+	health_burn = 50
+	flags = TABLEPASS
 	fits_under_table = 1
+	add_abilities = list(/datum/targetable/critter/wasp_sting/scorpion)
+
+	base_move_delay = 1
+	base_walk_delay = 1.5
 
 	setup_hands()
 		..()
