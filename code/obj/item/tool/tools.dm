@@ -268,7 +268,7 @@ Handsaw
 
 	m_amt = 50
 	g_amt = 20
-	mats = list("CRY-1", "CON-2")
+	mats = list("molitz", "claretine")
 
 
 

@@ -545,7 +545,7 @@
 	name = "camera helmet"
 	desc = "A helmet with a built in camera."
 	icon_state = "camhat"
-	mats = list("MET-1"=4, "CRY-1"=2, "CON-1"=2)
+	mats = list("mauxite"=4, "molitz"=2, "pharosium"=2)
 	item_state = "camhat"
 	var/obj/machinery/camera/camera = null
 	var/camera_tag = "Helmet Cam"

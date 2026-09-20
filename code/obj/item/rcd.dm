@@ -52,7 +52,7 @@ Broken RCD + Effects
 	w_class = W_CLASS_NORMAL
 	m_amt = 50000
 
-	mats = list("MET-3"=5, "DEN-3" = 1, "CON-2" = 10, "POW-2" = 3)
+	mats = list("bohrum"=5, "uqill" = 1, "claretine" = 10, "cerenkite" = 3)
 	stamina_damage = 15
 //	stamina_cost = 15
 //	stamina_crit_chance = 5
@@ -571,7 +571,7 @@ Broken RCD + Effects
 	var/door_access = 0
 	var/door_access_name_cache = null
 	var/door_type_name_cache = null
-	mats = list("MET-3"=100, "DEN-3" = 50, "CON-2"=50, "POW-3"=50, "starstone"=10)
+	mats = list("bohrum"=100, "uqill" = 50, "claretine"=50, "erebite"=50, "starstone"=10)
 	var/static/list/access_names = list() //ditto the above????
 	var/door_type = null
 
@@ -587,7 +587,7 @@ Broken RCD + Effects
 	name = "rapid construction device custom"
 	desc = "Also known as an RCD, this is capable of rapidly constructing walls, flooring, windows, and doors. This device was customized by the Chief Engineer to have an enhanced feature set and work more efficiently."
 	icon_state = "base_CE"
-	mats = list("MET-3"=20, "DEN-3" = 10, "CON-2" = 10, "POW-2" = 10)
+	mats = list("bohrum"=20, "uqill" = 10, "claretine" = 10, "cerenkite" = 10)
 
 	max_matter = 50
 	matter_create_wall = 1
@@ -774,7 +774,7 @@ Broken RCD + Effects
 /obj/item/rcd/material/cardboard
 	name = "cardboard rapid construction Device"
 	desc = "Also known as a C-RCD, this device is able to rapidly construct cardboard props."
-	mats = list("DEN-3" = 10, "POW-2" = 10, "cardboard" = 30)
+	mats = list("uqill" = 10, "cerenkite" = 10, "cardboard" = 30)
 	matter_create_floor = 0.5
 	time_create_floor = 0 SECONDS
 

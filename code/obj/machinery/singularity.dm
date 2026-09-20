@@ -1371,7 +1371,7 @@ for some reason I brought it back and tried to clean it up a bit and I regret ev
 	anchored = ANCHORED
 	density = 1
 	directwired = 1
-	mats = list("MET-2" = 6, "CON-1" = 5, "CRY-1" = 5, "REF-1" = 4)
+	mats = list("MET-2" = 6, "pharosium" = 5, "molitz" = 5, "REF-1" = 4)
 	var/magic = 0
 	var/active = 0
 	var/obj/item/tank/plasma/P = null
@@ -1478,7 +1478,7 @@ for some reason I brought it back and tried to clean it up a bit and I regret ev
 	anchored = ANCHORED
 	density = 1
 	directwired = 1
-	mats = list("MET-3" = 8, "CON-1" = 9, "CRY-1" = 8, "POW-1" = 7)
+	mats = list("bohrum" = 8, "pharosium" = 9, "molitz" = 8, "plasmastone" = 7)
 	///Supposed to make power just whenever, should work now
 	var/magic = 0
 	var/active = 0

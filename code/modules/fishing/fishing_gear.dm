@@ -163,7 +163,7 @@
 	icon_state = "syndie_fishing_rod-inactive"
 	inhand_image_icon = 'icons/mob/inhand/hand_fishing.dmi'
 	item_state = "syndie_fishing_rod-inactive"
-	mats = list("MET-3"=15, "WOOD"=5)
+	mats = list("bohrum"=15, "WOOD"=5)
 	hit_type = DAMAGE_STAB
 	flags = FPRINT | TABLEPASS | USEDELAY
 	w_class = W_CLASS_NORMAL

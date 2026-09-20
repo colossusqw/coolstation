@@ -310,7 +310,7 @@
 	desc = "Its a gun that has two modes, stun and kill"
 	item_state = "egun"
 	force = 5.0
-	mats = list("MET-1"=15, "CON-1"=5, "POW-1"=5)
+	mats = list("mauxite"=15, "pharosium"=5, "plasmastone"=5)
 	var/nojobreward = 0 //used to stop people from scanning it and then getting both a lawbringer/sabre AND an egun.
 	muzzle_flash = "muzzle_flash_elec"
 
@@ -984,7 +984,7 @@
 	force = 5.0
 	cell_type = /obj/item/ammo/power_cell/self_charging/big
 	muzzle_flash = "muzzle_flash_plaser"
-	mats = list("MET-3"=7, "CRY-1"=13, "POW-2"=10)
+	mats = list("bohrum"=7, "molitz"=13, "cerenkite"=10)
 
 	New()
 		..()
@@ -1163,7 +1163,7 @@
 	m_amt = 5000
 	g_amt = 2000
 	cell_type = null ///obj/item/ammo/power_cell/self_charging/lawbringer
-	mats = list("MET-1"=15, "CON-2"=5, "POW-2"=5)
+	mats = list("mauxite"=15, "claretine"=5, "cerenkite"=5)
 	var/owner_prints = null
 	var/image/indicator_display = null
 	rechargeable = 0

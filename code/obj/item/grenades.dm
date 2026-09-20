@@ -580,7 +580,7 @@ ABSTRACT_TYPE(/obj/item/old_grenade/projectile)
 	alt_det_time = 6 SECONDS
 	icon_state = "oxy"
 	item_state = "flashbang"
-	mats = list("MET-2"=2, "CON-1"=2, "molitz"=10, "char"=1 )
+	mats = list("MET-2"=2, "pharosium"=2, "molitz"=10, "char"=1 )
 	sound_armed = "sound/weapons/armbomb.ogg"
 	icon_state_armed = "oxy1"
 

@@ -224,7 +224,7 @@ var/global/list/portable_machinery = list() // stop looping through world for th
 	item_state = "electronic"
 	desc = "A remote that summons a Port-A-Sci."
 	machinery_name = "Port-a-Sci"
-	mats = list("MET-1" = 5, "CON-1" = 5, "telecrystal" = 10)
+	mats = list("mauxite" = 5, "pharosium" = 5, "telecrystal" = 10)
 
 	get_machinery()
 		if (!src)
@@ -930,7 +930,7 @@ var/global/list/portable_machinery = list() // stop looping through world for th
 //non-teleporting nanomed, for close at hand emergency surgery consumables
 /obj/machinery/vending/crash_cart
 	name = "Crash Cart"
-	desc = "An emergency lifesaving supply cart on wheels. It floats because there's no new sprite yet and eventually there will be a not-vending-machine-version."
+	desc = "An emergency lifesaving supply cart on wheels."
 	icon = 'icons/obj/machines/porters.dmi'
 	icon_state = "crash_cart"
 	icon_deny = "crash_cart"

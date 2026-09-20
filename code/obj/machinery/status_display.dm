@@ -378,7 +378,7 @@
 	name = "\improper AI display"
 	anchored = ANCHORED
 	density = 0
-	mats = list("MET-1"=2, "CON-1"=6, "CRY-1"=6)
+	mats = list("mauxite"=2, "pharosium"=6, "molitz"=6)
 	deconstruct_flags = DECON_SCREWDRIVER | DECON_WRENCH | DECON_CROWBAR | DECON_WELDER | DECON_MULTITOOL
 
 	machine_registry_idx = MACHINES_STATUSDISPLAYS

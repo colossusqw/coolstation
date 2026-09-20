@@ -462,7 +462,7 @@
 	desc = "A small electronic device designed to topically apply healing chemicals."
 	icon = 'icons/obj/chemical.dmi'
 	icon_state = "mender"
-	mats = list("MET-2"=5,"CRY-1"=4, "gold"=5)
+	mats = list("MET-2"=5,"molitz"=4, "gold"=5)
 	var/image/fluid_image
 	var/tampered = 0
 	var/borg = 0
