@@ -28,20 +28,30 @@ var/global/static/list/RARITY_COLOR = list("#9d9d9d", "#ffffff", "#1eff00", "#00
 /// see match_material_pattern() for exact definitions
 var/global/list/material_category_names = list(
 	"ALL"   = "Any Material",
-	"CON-1" = "Conductive Material",
-	"CON-2" = "High Energy Conductor",
-	"CRY-1" = "Crystal",
-	"DEN-1" = "High Density Crystalline Matter",
-	"DEN-2" = "Very High Density Crystalline Matter",
-	"DEN-3" = "Extraordinarily Dense Crystalline Matter",
+	//is metal or crystal, sorted by electrical (higher better)
+	"CON-1" = "Conductive Material", //50, pharosium
+	"CON-2" = "High Energy Conductor", //75, claretine
+	//is crystal
+	"CRY-1" = "Crystal", //molitz
+	//is crystal and sorted by density
+	//going by this it sure seems like a lot of the old stuff i remember that used to be gated by uqill was just straight up reduced to molitz
+	"DEN-1" = "High Density Crystalline Matter", //40, molitz
+	"DEN-2" = "Very High Density Crystalline Matter", //60, wizard crystal? some gemstones.
+	"DEN-3" = "Extraordinarily Dense Crystalline Matter", //75, uqill
+	//is cloth or rubber or organic
 	"FAB-1" = "Fabric",
-	"INS-1" = "Insulative Material",
-	"INS-2" = "Highly Insulative Material",
-	"MET-1" = "Metal",
-	"MET-2" = "Sturdy Metal",
-	"MET-3" = "Dense Metal",
-	"POW-1" = "Power Source",
-	"POW-2" = "Significant Power Source",
-	"POW-3" = "Extreme Power Source",
+	//is cloth or rubber, sorted by electrical (lower better)
+	"INS-1" = "Insulative Material", //47, latex
+	"INS-2" = "Highly Insulative Material", //20, synthrubber
+	//is metal, sorted by hardness (higher better)
+	"MET-1" = "Metal", //mauxite
+	"MET-2" = "Sturdy Metal", //also mauxite (maybe this should be a refined form of mauxite? mauxsteel?)
+	"MET-3" = "Dense Metal", //bohrum
+	//is energy material, sorted by radioactivity
+	"POW-1" = "Power Source", //no radcheck, plasmastone, etc. but also basically any of them, including goast stuff, and telecrystals.
+	"POW-2" = "Significant Power Source", //10, cerenkite
+	"POW-3" = "Extreme Power Source", //55, erebite and soulsteel (or it would be if i didn't mess with the rad count)
+	//...but that's why i put specific mats back in for most recipes. we're basically killing matsci as it exists from forkdate. so there.
+	//anyway: reflective at all
 	"REF-1" = "Reflective Material"
 )
