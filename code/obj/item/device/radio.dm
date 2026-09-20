@@ -774,7 +774,7 @@ Code:
 	item_state = "signaler"
 	var/code = 30.0
 	w_class = W_CLASS_TINY
-	frequency = FREQ_WLNET
+	frequency = FREQ_DEFAULT
 	var/delay = 0
 	var/airlock_wire = null
 	desc = "A device used to send a coded signal over a specified frequency, with the effect depending on the device that recieves the signal."
