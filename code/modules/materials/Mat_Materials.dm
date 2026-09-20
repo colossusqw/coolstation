@@ -1455,6 +1455,6 @@
 
 /datum/material/plastic
 
-/datum/material/cardboard
+no for real though we really need to make plastic
 
 */

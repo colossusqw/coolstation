@@ -61,7 +61,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/mechanics
 	name = "Reverse-Engineered Schematic"
-	item_paths = list("MET-1","CON-1","CRY-1")
+	item_paths = list("mauxite","pharosium","molitz")
 	item_amounts = list(1,1,1)
 	item_outputs = list(/obj/item/electronics/frame)
 	var/frame_path = null
@@ -125,7 +125,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/mechanics/gunbot
 	name = "Security Robot"
-	item_paths = list("POW-1","MET-2","CON-1")
+	item_paths = list("plasmastone","MET-2","pharosium")
 	item_amounts = list(1,10,10,10)
 	frame_path = /obj/critter/gunbot/heavy
 	time = 15 SECONDS
@@ -143,7 +143,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 /datum/manufacture/iron
 	// purely a test
 	name = "Iron"
-	item_paths = list("MET-1")
+	item_paths = list("mauxite")
 	item_amounts = list(1)
 	item_outputs = list("reagent-iron")
 	time = 1 SECONDS
@@ -153,7 +153,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/crowbar
 	name = "Crowbar"
-	item_paths = list("MET-1")
+	item_paths = list("mauxite")
 	item_amounts = list(1)
 	item_outputs = list(/obj/item/crowbar)
 	time = 5 SECONDS
@@ -162,7 +162,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/screwdriver
 	name = "Screwdriver"
-	item_paths = list("MET-1")
+	item_paths = list("mauxite")
 	item_amounts = list(1)
 	item_outputs = list(/obj/item/screwdriver)
 	time = 5 SECONDS
@@ -171,7 +171,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/wirecutters
 	name = "Wirecutters"
-	item_paths = list("MET-1")
+	item_paths = list("mauxite")
 	item_amounts = list(1)
 	item_outputs = list(/obj/item/wirecutters)
 	time = 5 SECONDS
@@ -180,7 +180,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/wrench
 	name = "Wrench"
-	item_paths = list("MET-1")
+	item_paths = list("mauxite")
 	item_amounts = list(1)
 	item_outputs = list(/obj/item/wrench)
 	time = 5 SECONDS
@@ -189,7 +189,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/flashlight
 	name = "Flashlight"
-	item_paths = list("MET-1","CON-1","CRY-1")
+	item_paths = list("mauxite","pharosium","molitz")
 	item_amounts = list(1,1,1)
 	item_outputs = list(/obj/item/device/light/flashlight)
 	time = 5 SECONDS
@@ -207,7 +207,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/harmonica
 	name = "Harmonica"
-	item_paths = list("MET-1")
+	item_paths = list("mauxite")
 	item_amounts = list(1)
 	item_outputs = list(/obj/item/instrument/harmonica)
 	time = 5 SECONDS
@@ -216,7 +216,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/bottle
 	name = "Glass Bottle"
-	item_paths = list("CRY-1")
+	item_paths = list("molitz")
 	item_amounts = list(1)
 	item_outputs = list(/obj/item/reagent_containers/food/drinks/bottle/soda)
 	time = 4 SECONDS
@@ -235,7 +235,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 /*
 /datum/manufacture/stunrounds
 	name = ".38 Stunner Rounds"
-	item_paths = list("MET-1","CON-1", "CRY-1")
+	item_paths = list("mauxite","pharosium", "molitz")
 	item_amounts = list(3,2,2)
 	item_outputs = list(/obj/item/ammo/bullets/a38/stun)
 	time = 20 SECONDS
@@ -244,7 +244,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/bullet_22
 	name = ".22 Bullets"
-	item_paths = list("MET-2","CON-1")
+	item_paths = list("MET-2","pharosium")
 	item_amounts = list(30,24)
 	item_outputs = list(/obj/item/ammo/bullets/bullet_22)
 	time = 30 SECONDS
@@ -253,7 +253,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/bullet_12g_nail
 	name = "12 gauge nailshot"
-	item_paths = list("MET-2","CON-1")
+	item_paths = list("MET-2","pharosium")
 	item_amounts = list(40,30)
 	item_outputs = list(/obj/item/ammo/bullets/nails)
 	time = 30 SECONDS
@@ -263,7 +263,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/fog_grenade
 	name = "Fog Grenade"
-	item_paths = list("MET-2","CON-1")
+	item_paths = list("MET-2","pharosium")
 	item_amounts = list(30,25)
 	item_outputs = list(/obj/item/chem_grenade/fog)
 	time = 35 SECONDS
@@ -273,7 +273,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/extinguisher
 	name = "Fire Extinguisher"
-	item_paths = list("MET-2","CRY-1")
+	item_paths = list("MET-2","molitz")
 	item_amounts = list(1,1)
 	item_outputs = list(/obj/item/extinguisher)
 	time = 8 SECONDS
@@ -282,7 +282,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/welder
 	name = "Welding Tool"
-	item_paths = list("MET-2","CON-1")
+	item_paths = list("MET-2","pharosium")
 	item_amounts = list(1,1)
 	item_outputs = list(/obj/item/weldingtool)
 	time = 8 SECONDS
@@ -291,7 +291,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/soldering
 	name = "Soldering Iron"
-	item_paths = list("MET-2","CON-1")
+	item_paths = list("MET-2","pharosium")
 	item_amounts = list(1,2)
 	item_outputs = list(/obj/item/electronics/soldering)
 	time = 8 SECONDS
@@ -300,7 +300,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/stapler
 	name = "Staple Gun"
-	item_paths = list("MET-2","CON-1")
+	item_paths = list("MET-2","pharosium")
 	item_amounts = list(2,1)
 	item_outputs = list(/obj/item/staple_gun)
 	time = 10 SECONDS
@@ -316,7 +316,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/weldingmask
 	name = "Welding Mask"
-	item_paths = list("MET-2","CRY-1")
+	item_paths = list("MET-2","molitz")
 	item_amounts = list(2,2)
 	item_outputs = list(/obj/item/clothing/head/helmet/welding)
 	time = 10 SECONDS
@@ -325,7 +325,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/light_bulb
 	name = "Light Bulb Box"
-	item_paths = list("CRY-1")
+	item_paths = list("molitz")
 	item_amounts = list(1)
 	item_outputs = list(/obj/item/storage/box/lightbox/bulbs)
 	time = 4 SECONDS
@@ -334,7 +334,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/red_bulb
 	name = "Red Light Bulb Box"
-	item_paths = list("CRY-1","CON-1")
+	item_paths = list("molitz","pharosium")
 	item_amounts = list(1,1)
 	item_outputs = list(/obj/item/storage/box/lightbox/bulbs/red)
 	time = 8 SECONDS
@@ -343,7 +343,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/yellow_bulb
 	name = "Yellow Light Bulb Box"
-	item_paths = list("CRY-1","CON-1")
+	item_paths = list("molitz","pharosium")
 	item_amounts = list(1,1)
 	item_outputs = list(/obj/item/storage/box/lightbox/bulbs/yellow)
 	time = 8 SECONDS
@@ -352,7 +352,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/green_bulb
 	name = "Green Light Bulb Box"
-	item_paths = list("CRY-1","CON-1")
+	item_paths = list("molitz","pharosium")
 	item_amounts = list(1,1)
 	item_outputs = list(/obj/item/storage/box/lightbox/bulbs/green)
 	time = 8 SECONDS
@@ -361,7 +361,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/cyan_bulb
 	name = "Cyan Light Bulb Box"
-	item_paths = list("CRY-1","CON-1")
+	item_paths = list("molitz","pharosium")
 	item_amounts = list(1,1)
 	item_outputs = list(/obj/item/storage/box/lightbox/bulbs/cyan)
 	time = 8 SECONDS
@@ -370,7 +370,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/blue_bulb
 	name = "Blue Light Bulb Box"
-	item_paths = list("CRY-1","CON-1")
+	item_paths = list("molitz","pharosium")
 	item_amounts = list(1,1)
 	item_outputs = list(/obj/item/storage/box/lightbox/bulbs/blue)
 	time = 8 SECONDS
@@ -379,7 +379,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/purple_bulb
 	name = "Purple Light Bulb Box"
-	item_paths = list("CRY-1","CON-1")
+	item_paths = list("molitz","pharosium")
 	item_amounts = list(1,1)
 	item_outputs = list(/obj/item/storage/box/lightbox/bulbs/purple)
 	time = 8 SECONDS
@@ -388,7 +388,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/blacklight_bulb
 	name = "Blacklight Bulb Box"
-	item_paths = list("CRY-1","CON-1")
+	item_paths = list("molitz","pharosium")
 	item_amounts = list(1,1)
 	item_outputs = list(/obj/item/storage/box/lightbox/bulbs/blacklight)
 	time = 8 SECONDS
@@ -397,7 +397,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/light_tube
 	name = "Light Tube Box"
-	item_paths = list("CRY-1")
+	item_paths = list("molitz")
 	item_amounts = list(1)
 	item_outputs = list(/obj/item/storage/box/lightbox/tubes)
 	time = 4 SECONDS
@@ -406,7 +406,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/red_tube
 	name = "Red Light Tube Box"
-	item_paths = list("CRY-1","CON-1")
+	item_paths = list("molitz","pharosium")
 	item_amounts = list(1,1)
 	item_outputs = list(/obj/item/storage/box/lightbox/tubes/red)
 	time = 8 SECONDS
@@ -415,7 +415,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/yellow_tube
 	name = "Yellow Light Tube Box"
-	item_paths = list("CRY-1","CON-1")
+	item_paths = list("molitz","pharosium")
 	item_amounts = list(1,1)
 	item_outputs = list(/obj/item/storage/box/lightbox/tubes/yellow)
 	time = 8 SECONDS
@@ -424,7 +424,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/green_tube
 	name = "Green Light Tube Box"
-	item_paths = list("CRY-1","CON-1")
+	item_paths = list("molitz","pharosium")
 	item_amounts = list(1,1)
 	item_outputs = list(/obj/item/storage/box/lightbox/tubes/green)
 	time = 8 SECONDS
@@ -433,7 +433,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/cyan_tube
 	name = "Cyan Light Tube Box"
-	item_paths = list("CRY-1","CON-1")
+	item_paths = list("molitz","pharosium")
 	item_amounts = list(1,1)
 	item_outputs = list(/obj/item/storage/box/lightbox/tubes/cyan)
 	time = 8 SECONDS
@@ -442,7 +442,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/blue_tube
 	name = "Blue Light Tube Box"
-	item_paths = list("CRY-1","CON-1")
+	item_paths = list("molitz","pharosium")
 	item_amounts = list(1,1)
 	item_outputs = list(/obj/item/storage/box/lightbox/tubes/blue)
 	time = 8 SECONDS
@@ -451,7 +451,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/purple_tube
 	name = "Purple Light Tube Box"
-	item_paths = list("CRY-1","CON-1")
+	item_paths = list("molitz","pharosium")
 	item_amounts = list(1,1)
 	item_outputs = list(/obj/item/storage/box/lightbox/tubes/purple)
 	time = 8 SECONDS
@@ -460,7 +460,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/blacklight_tube
 	name = "Blacklight Tube Box"
-	item_paths = list("CRY-1","CON-1")
+	item_paths = list("molitz","pharosium")
 	item_amounts = list(1,1)
 	item_outputs = list(/obj/item/storage/box/lightbox/tubes/blacklight)
 	time = 8 SECONDS
@@ -469,7 +469,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/table_folding
 	name = "Folding Table"
-	item_paths = list("MET-1","ALL")
+	item_paths = list("mauxite","ALL")
 	item_amounts = list(1,2)
 	item_outputs = list(/obj/item/furniture_parts/table/folding)
 	time = 20 SECONDS
@@ -478,7 +478,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/metal
 	name = "Metal Sheet"
-	item_paths = list("MET-1")
+	item_paths = list("mauxite")
 	item_amounts = list(1)
 	item_outputs = list(/obj/item/sheet)
 	time = 2 SECONDS
@@ -488,7 +488,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/metalR
 	name = "Reinforced Metal"
-	item_paths = list("MET-1")
+	item_paths = list("mauxite")
 	item_amounts = list(2)
 	item_outputs = list(/obj/item/sheet)
 	time = 12 SECONDS
@@ -499,11 +499,11 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 	modify_output(var/obj/machinery/manufacturer/M, var/atom/A, var/list/materials)
 		..()
 		var/obj/item/sheet/S = A
-		S.set_reinforcement(getMaterial(materials["MET-1"]))
+		S.set_reinforcement(getMaterial(materials["mauxite"]))
 
 /datum/manufacture/glass
 	name = "Glass Panel"
-	item_paths = list("CRY-1")
+	item_paths = list("molitz")
 	item_amounts = list(5)
 	item_outputs = list(/obj/item/sheet)
 	time = 8 SECONDS
@@ -513,7 +513,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/glassR
 	name = "Reinforced Glass Panel"
-	item_paths = list("CRY-1","MET-2")
+	item_paths = list("molitz","MET-2")
 	item_amounts = list(1,1)
 	item_outputs = list(/obj/item/sheet/glass/reinforced)
 	time = 12 SECONDS
@@ -524,7 +524,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 	modify_output(var/obj/machinery/manufacturer/M, var/atom/A, var/list/materials)
 		..()
 		var/obj/item/sheet/S = A
-		S.set_reinforcement(getMaterial(materials["CRY-1"]))
+		S.set_reinforcement(getMaterial(materials["molitz"]))
 
 /datum/manufacture/rods2
 	name = "Metal Rods (x2)"
@@ -561,7 +561,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/tripod
 	name = "Tripod"
-	item_paths = list("MET-1")
+	item_paths = list("mauxite")
 	item_names = list("Metal")
 	item_amounts = list(10)
 	item_outputs = list(/obj/item/tripod)
@@ -571,7 +571,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/tripod_bulb
 	name = "Tripod Light Bulb"
-	item_paths = list("CRY-1","CON-1")
+	item_paths = list("molitz","pharosium")
 	item_amounts = list(5,2)
 	item_outputs = list(/obj/item/tripod_bulb/light)
 	time = 5 SECONDS
@@ -673,7 +673,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/player_module
 	name = "Vending Module"
-	item_paths = list("CON-1")
+	item_paths = list("pharosium")
 	item_amounts = list(2)
 	item_outputs = list(/obj/item/machineboard/vending/player)
 	time = 5 SECONDS
@@ -682,7 +682,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/cable
 	name = "Electrical Cable Coil"
-	item_paths = list("INS-1", "CON-1")
+	item_paths = list("INS-1", "pharosium")
 	item_amounts = list(10, 10)
 	item_outputs = list(/obj/item/cable_coil)
 	time = 3 SECONDS
@@ -694,12 +694,12 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 		..()
 		var/obj/item/cable_coil/coil = A
 		coil.setInsulator(getMaterial(materials["INS-1"]))
-		coil.setConductor(getMaterial(materials["CON-1"]))
+		coil.setConductor(getMaterial(materials["pharosium"]))
 		return 1
 
 /datum/manufacture/RCD
 	name = "Rapid Construction Device"
-	item_paths = list("MET-3", "DEN-1", "CON-1", "POW-2")
+	item_paths = list("bohrum", "uqill", "pharosium", "cerenkite")
 	item_amounts = list(5, 1, 10, 3)
 	item_outputs = list(/obj/item/rcd)
 	time = 90 SECONDS
@@ -708,7 +708,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/RCDammo
 	name = "Compressed Matter Cartridge"
-	item_paths = list("DEN-1")
+	item_paths = list("uqill")
 	item_amounts = list(5)
 	item_outputs = list(/obj/item/rcd_ammo)
 	time = 10 SECONDS
@@ -717,7 +717,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/RCDammomedium
 	name = "Medium Compressed Matter Cartridge"
-	item_paths = list("DEN-1")
+	item_paths = list("uqill"= 4)
 	item_amounts = list(20)
 	item_outputs = list(/obj/item/rcd_ammo/medium)
 	time = 20 SECONDS
@@ -726,7 +726,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/RCDammolarge
 	name = "Large Compressed Matter Cartridge"
-	item_paths = list("DEN-1")
+	item_paths = list("uqill"= 8)
 	item_amounts = list(45)
 	item_outputs = list(/obj/item/rcd_ammo/big)
 	time = 30 SECONDS
@@ -735,7 +735,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/lamp_manufacturer
 	name = "Miniaturized Lamp Manufacturer"
-	item_paths = list("MET-1", "CON-2", "INS-1")
+	item_paths = list("mauxite", "claretine", "INS-1")
 	item_amounts = list(3, 5, 3)
 	item_outputs = list(/obj/item/lamp_manufacturer/organic)
 	time = 25 SECONDS
@@ -746,7 +746,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 //Cause I know the floor/wall planner is a sucky stopgap solution to construction sucking, but for now let's allow folks to make rooms that aren't just grey.
 /datum/manufacture/room_planner
 	name = "Floor and Wall Planner"
-	item_paths = list("MET-1")
+	item_paths = list("mauxite")
 	item_amounts = list(15) //1,5 bars of whatever metal: easy to make but expensive to spam
 	item_outputs = list(/obj/item/room_planner)
 	time = 8 SECONDS
@@ -758,7 +758,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/pipeframe
 	name = "Pre-formed Standard Piping"
-	item_paths = list("MET-1")
+	item_paths = list("mauxite")
 	item_amounts = list(2)
 	item_outputs = list(/obj/item/atmospherics/pipeframe/regular)
 	time = 1 SECOND
@@ -767,7 +767,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/pipeframe_ex
 	name = "Pre-formed Exchanger Piping"
-	item_paths = list("MET-1")
+	item_paths = list("mauxite")
 	item_amounts = list(2)
 	item_outputs = list(/obj/item/atmospherics/pipeframe/exchanger)
 	time = 1 SECOND
@@ -776,7 +776,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/pipeframe_ju
 	name = "Pre-formed Piping Junction"
-	item_paths = list("MET-1")
+	item_paths = list("mauxite")
 	item_amounts = list(4)
 	item_outputs = list(/obj/item/atmospherics/pipeframe/exchanger_regular_junction)
 	time = 2 SECONDS
@@ -785,7 +785,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 
 /datum/manufacture/atmos_module
-	item_paths = list("MET-1", "CON-1")
+	item_paths = list("mauxite", "pharosium")
 	item_amounts = list(4, 2)
 	time = 3 SECONDS
 	create = 1
@@ -839,7 +839,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/atmos_purger
 	name = "Pipeline Gas Purger"
-	item_paths = list("MET-1", "CON-1")
+	item_paths = list("mauxite", "pharosium")
 	item_amounts = list(10, 6)
 	time = 7 SECONDS
 	create = 1
@@ -854,7 +854,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/sds
 	name = "Syndicate Destruction System"
-	item_paths = list("MET-3","DEN-1","CON-1")
+	item_paths = list("bohrum","uqill","pharosium")
 	item_amounts = list(16,12,8)
 	item_outputs = list(/obj/item/syndicate_destruction_system)
 	time = 90 SECONDS
@@ -863,7 +863,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/jumpsuit
 	name = "Grey Jumpsuit"
-	item_paths = list("FAB-1")
+	item_paths = list("fabric")
 	item_amounts = list(4)
 	item_outputs = list(/obj/item/clothing/under/color/grey)
 	time = 5 SECONDS
@@ -872,7 +872,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/hardhat
 	name = "Hard Hat"
-	item_paths = list("INS-1","CON-1","MET-1")
+	item_paths = list("INS-1","pharosium","mauxite")
 	item_amounts = list(1,1,1)
 	item_outputs = list(/obj/item/clothing/head/helmet/hardhat)
 	time = 5 SECONDS
@@ -881,7 +881,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/shoes
 	name = "Black Shoes"
-	item_paths = list("FAB-1")
+	item_paths = list("fabric")
 	item_amounts = list(3)
 	item_outputs = list(/obj/item/clothing/shoes/black)
 	time = 5 SECONDS
@@ -890,7 +890,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/shoes_white
 	name = "White Shoes"
-	item_paths = list("FAB-1")
+	item_paths = list("fabric")
 	item_amounts = list(3)
 	item_outputs = list(/obj/item/clothing/shoes/white)
 	time = 5 SECONDS
@@ -901,7 +901,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/scalpel
 	name = "Scalpel"
-	item_paths = list("MET-1")
+	item_paths = list("mauxite")
 	item_amounts = list(1)
 	item_outputs = list(/obj/item/scalpel)
 	time = 5 SECONDS
@@ -910,7 +910,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/tweezers
 	name = "Medical tweezers"
-	item_paths = list("MET-1")
+	item_paths = list("mauxite")
 	item_amounts = list(1)
 	item_outputs = list(/obj/item/tweezers)
 	time = 5 SECONDS
@@ -919,7 +919,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/circular_saw
 	name = "Circular Saw"
-	item_paths = list("MET-1")
+	item_paths = list("mauxite")
 	item_amounts = list(1)
 	item_outputs = list(/obj/item/circular_saw)
 	time = 5 SECONDS
@@ -928,7 +928,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/surgical_scissors
 	name = "Surgical Scissors"
-	item_paths = list("MET-1")
+	item_paths = list("mauxite")
 	item_amounts = list(1)
 	item_outputs = list(/obj/item/scissors/surgical_scissors)
 	time = 5 SECONDS
@@ -937,7 +937,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/hemostat
 	name = "Hemostat"
-	item_paths = list("MET-1")
+	item_paths = list("mauxite")
 	item_amounts = list(1)
 	item_outputs = list(/obj/item/hemostat)
 	time = 5 SECONDS
@@ -946,7 +946,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/surgical_spoon
 	name = "Enucleation Spoon"
-	item_paths = list("MET-1")
+	item_paths = list("mauxite")
 	item_amounts = list(1)
 	item_outputs = list(/obj/item/surgical_spoon)
 	time = 5 SECONDS
@@ -955,7 +955,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/suture
 	name = "Suture"
-	item_paths = list("MET-1")
+	item_paths = list("mauxite")
 	item_amounts = list(1)
 	item_outputs = list(/obj/item/suture)
 	time = 5 SECONDS
@@ -964,7 +964,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/deafhs
 	name = "Auditory Headset"
-	item_paths = list("CON-1","CRY-1")
+	item_paths = list("pharosium","molitz")
 	item_amounts = list(3,3)
 	item_outputs = list(/obj/item/device/radio/headset/deaf)
 	time = 40 SECONDS
@@ -973,7 +973,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/visor
 	name = "VISOR Prosthesis"
-	item_paths = list("CON-1","CRY-1")
+	item_paths = list("pharosium","molitz")
 	item_amounts = list(3,3)
 	item_outputs = list(/obj/item/clothing/glasses/visor)
 	time = 40 SECONDS
@@ -982,7 +982,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/white_cane
 	name = "White Cane"
-	item_paths = list("MET-1","FAB-1")
+	item_paths = list("mauxite","fabric")
 	item_amounts = list(4,1)
 	item_outputs = list(/obj/item/white_cane)
 	time = 4 SECONDS
@@ -991,7 +991,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/glasses
 	name = "Prescription Glasses"
-	item_paths = list("MET-1","CRY-1")
+	item_paths = list("mauxite","molitz")
 	item_amounts = list(1,2)
 	item_outputs = list(/obj/item/clothing/glasses/regular)
 	time = 20 SECONDS
@@ -1000,7 +1000,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/hypospray
 	name = "Hypospray"
-	item_paths = list("MET-1","CON-1","CRY-1")
+	item_paths = list("mauxite","pharosium","molitz")
 	item_amounts = list(2,2,2)
 	item_outputs = list(/obj/item/reagent_containers/hypospray)
 	time = 40 SECONDS
@@ -1009,7 +1009,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/prodocs
 	name = "ProDoc Healthgoggles"
-	item_paths = list("MET-1","CRY-1")
+	item_paths = list("mauxite","molitz")
 	item_amounts = list(1,2)
 	item_outputs = list(/obj/item/clothing/glasses/healthgoggles)
 	time = 20 SECONDS
@@ -1018,7 +1018,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/latex_gloves
 	name = "Latex Gloves"
-	item_paths = list("FAB-1")
+	item_paths = list("fabric")
 	item_amounts = list(1)
 	item_outputs = list(/obj/item/clothing/gloves/latex)
 	time = 5 SECONDS
@@ -1027,7 +1027,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/body_bag
 	name = "Body Bag"
-	item_paths = list("FAB-1")
+	item_paths = list("fabric")
 	item_amounts = list(3)
 	item_outputs = list(/obj/item/body_bag)
 	time = 15 SECONDS
@@ -1036,7 +1036,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/rag
 	name = "Rag"
-	item_paths = list("FAB-1")
+	item_paths = list("fabric")
 	item_amounts = list(2)
 	item_outputs = list(/obj/item/material_piece/cloth/rag)
 	time = 5 SECONDS
@@ -1045,7 +1045,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/maskingtape
 	name = "Masking Tape"
-	item_paths = list("FAB-1")
+	item_paths = list("fabric")
 	item_amounts = list(2)
 	item_outputs = list(/obj/item/handcuffs/tape_roll/crappy)
 	time = 13 SECONDS
@@ -1054,7 +1054,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/cyberheart
 	name = "Cyberheart"
-	item_paths = list("MET-1","CON-1","ALL")
+	item_paths = list("mauxite","pharosium","ALL")
 	item_amounts = list(3,3,2)
 	item_outputs = list(/obj/item/organ/heart/cyber)
 	time = 25 SECONDS
@@ -1063,7 +1063,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/cyberbutt
 	name = "Cyberbutt"
-	item_paths = list("MET-1","CON-1","ALL")
+	item_paths = list("mauxite","pharosium","ALL")
 	item_amounts = list(2,2,2)
 	item_outputs = list(/obj/item/clothing/head/butt/cyberbutt)
 	time = 15 SECONDS
@@ -1072,7 +1072,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/cyberappendix
 	name = "Cyberappendix"
-	item_paths = list("MET-1","CON-1","ALL")
+	item_paths = list("mauxite","pharosium","ALL")
 	item_amounts = list(1,1,1)
 	item_outputs = list(/obj/item/organ/appendix/cyber)
 	time = 15 SECONDS
@@ -1081,7 +1081,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/cyberpancreas
 	name = "Cyberpancreas"
-	item_paths = list("MET-1","CON-1","ALL")
+	item_paths = list("mauxite","pharosium","ALL")
 	item_amounts = list(1,1,1)
 	item_outputs = list(/obj/item/organ/pancreas/cyber)
 	time = 15 SECONDS
@@ -1090,7 +1090,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/cyberspleen
 	name = "Cyberspleen"
-	item_paths = list("MET-1","CON-1","ALL")
+	item_paths = list("mauxite","pharosium","ALL")
 	item_amounts = list(1,1,1)
 	item_outputs = list(/obj/item/organ/spleen/cyber)
 	time = 15 SECONDS
@@ -1099,7 +1099,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/cyberintestines
 	name = "Cyberintestines"
-	item_paths = list("MET-1","CON-1","ALL")
+	item_paths = list("mauxite","pharosium","ALL")
 	item_amounts = list(1,1,1)
 	item_outputs = list(/obj/item/organ/intestines/cyber)
 	time = 15 SECONDS
@@ -1108,7 +1108,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/cyberstomach
 	name = "Cyberstomach"
-	item_paths = list("MET-1","CON-1","ALL")
+	item_paths = list("mauxite","pharosium","ALL")
 	item_amounts = list(1,1,1)
 	item_outputs = list(/obj/item/organ/stomach/cyber)
 	time = 15 SECONDS
@@ -1117,7 +1117,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/cyberkidney
 	name = "Cyberkidney"
-	item_paths = list("MET-1","CON-1","ALL")
+	item_paths = list("mauxite","pharosium","ALL")
 	item_amounts = list(1,1,1)
 	item_outputs = list(/obj/item/organ/kidney/cyber)
 	time = 15 SECONDS
@@ -1126,7 +1126,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/cyberliver
 	name = "Cyberliver"
-	item_paths = list("MET-1","CON-1","ALL")
+	item_paths = list("mauxite","pharosium","ALL")
 	item_amounts = list(1,1,1)
 	item_outputs = list(/obj/item/organ/liver/cyber)
 	time = 15 SECONDS
@@ -1135,7 +1135,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/cyberlung_left
 	name = "Left Cyberlung"
-	item_paths = list("MET-1","CON-1","ALL")
+	item_paths = list("mauxite","pharosium","ALL")
 	item_amounts = list(1,1,1)
 	item_outputs = list(/obj/item/organ/lung/cyber/left)
 	time = 15 SECONDS
@@ -1144,7 +1144,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/cyberlung_right
 	name = "Right Cyberlung"
-	item_paths = list("MET-1","CON-1","ALL")
+	item_paths = list("mauxite","pharosium","ALL")
 	item_amounts = list(1,1,1)
 	item_outputs = list(/obj/item/organ/lung/cyber/right)
 	time = 15 SECONDS
@@ -1153,7 +1153,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/cybereye
 	name = "Cybereye"
-	item_paths = list("CRY-1","MET-1","CON-1","INS-1")
+	item_paths = list("molitz","mauxite","pharosium","INS-1")
 	item_amounts = list(2,1,2,1)
 	item_outputs = list(/obj/item/organ/eye/cyber)
 	time = 20 SECONDS
@@ -1162,7 +1162,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/cybereye_sunglass
 	name = "Polarized Cybereye"
-	item_paths = list("CRY-1","MET-1","CON-1","INS-1")
+	item_paths = list("molitz","mauxite","pharosium","INS-1")
 	item_amounts = list(3,1,2,1)
 	item_outputs = list(/obj/item/organ/eye/cyber/sunglass)
 	time = 25 SECONDS
@@ -1171,7 +1171,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/cybereye_sechud
 	name = "Security HUD Cybereye"
-	item_paths = list("CRY-1","MET-1","CON-1","INS-1")
+	item_paths = list("molitz","mauxite","pharosium","INS-1")
 	item_amounts = list(3,1,2,1)
 	item_outputs = list(/obj/item/organ/eye/cyber/sechud)
 	time = 25 SECONDS
@@ -1180,7 +1180,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/cybereye_thermal
 	name = "Thermal Imager Cybereye"
-	item_paths = list("CRY-1","MET-1","CON-1","INS-1")
+	item_paths = list("molitz","mauxite","pharosium","INS-1")
 	item_amounts = list(3,1,2,1)
 	item_outputs = list(/obj/item/organ/eye/cyber/thermal)
 	time = 25 SECONDS
@@ -1189,7 +1189,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/cybereye_meson
 	name = "Mesonic Imager Cybereye"
-	item_paths = list("CRY-1","MET-1","CON-1","INS-1")
+	item_paths = list("molitz","mauxite","pharosium","INS-1")
 	item_amounts = list(3,1,2,1)
 	item_outputs = list(/obj/item/organ/eye/cyber/meson)
 	time = 25 SECONDS
@@ -1198,7 +1198,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/cybereye_spectro
 	name = "Spectroscopic Imager Cybereye"
-	item_paths = list("CRY-1","MET-1","CON-1","INS-1")
+	item_paths = list("molitz","mauxite","pharosium","INS-1")
 	item_amounts = list(3,1,2,1)
 	item_outputs = list(/obj/item/organ/eye/cyber/spectro)
 	time = 25 SECONDS
@@ -1207,7 +1207,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/cybereye_prodoc
 	name = "ProDoc Healthview Cybereye"
-	item_paths = list("CRY-1","MET-1","CON-1","INS-1")
+	item_paths = list("molitz","mauxite","pharosium","INS-1")
 	item_amounts = list(3,1,2,1)
 	item_outputs = list(/obj/item/organ/eye/cyber/prodoc)
 	time = 25 SECONDS
@@ -1216,7 +1216,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/cybereye_camera
 	name = "Camera Cybereye"
-	item_paths = list("CRY-1","MET-1","CON-1","INS-1")
+	item_paths = list("molitz","mauxite","pharosium","INS-1")
 	item_amounts = list(3,1,2,1)
 	item_outputs = list(/obj/item/organ/eye/cyber/camera)
 	time = 25 SECONDS
@@ -1225,7 +1225,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/cybereye_laser
 	name = "Laser Cybereye"
-	item_paths = list("CRY-1","MET-1","CON-1","INS-1","erebite")
+	item_paths = list("molitz","mauxite","pharosium","INS-1","erebite")
 	item_amounts = list(3,1,2,1,1)
 	item_outputs = list(/obj/item/organ/eye/cyber/laser)
 	time = 40 SECONDS
@@ -1234,7 +1234,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/implant_health
 	name = "Health Monitor Implant"
-	item_paths = list("CON-1","CRY-1")
+	item_paths = list("pharosium","molitz")
 	item_amounts = list(3,3)
 	item_outputs = list(/obj/item/implantcase/health)
 	time = 40 SECONDS
@@ -1243,7 +1243,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/implant_antirot
 	name = "Rotbusttec Implant"
-	item_paths = list("CON-1","CRY-1")
+	item_paths = list("pharosium","molitz")
 	item_amounts = list(2,2)
 	item_outputs = list(/obj/item/implantcase/antirot)
 	time = 30 SECONDS
@@ -1312,7 +1312,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/robo_head_screen
 	name = "Cyborg Screen Head"
-	item_paths = list("MET-2","CON-1","CRY-1")
+	item_paths = list("MET-2","pharosium","molitz")
 	item_amounts = list(6,2,6)
 	item_outputs = list(/obj/item/parts/robot_parts/head/screen)
 	time = 24 SECONDS
@@ -1321,7 +1321,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/robo_head_light
 	name = "Light Cyborg Head"
-	item_paths = list("MET-1")
+	item_paths = list("mauxite")
 	item_amounts = list(6)
 	item_outputs = list(/obj/item/parts/robot_parts/head/light)
 	time = 15 SECONDS
@@ -1339,7 +1339,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/robo_arm_r_light
 	name = "Light Cyborg Arm (Right)"
-	item_paths = list("MET-1")
+	item_paths = list("mauxite")
 	item_amounts = list(3)
 	item_outputs = list(/obj/item/parts/robot_parts/arm/right/light)
 	time = 8 SECONDS
@@ -1357,7 +1357,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/robo_arm_l_light
 	name = "Light Cyborg Arm (Left)"
-	item_paths = list("MET-1")
+	item_paths = list("mauxite")
 	item_amounts = list(3)
 	item_outputs = list(/obj/item/parts/robot_parts/arm/left/light)
 	time = 8 SECONDS
@@ -1375,7 +1375,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/robo_leg_r_light
 	name = "Light Cyborg Leg (Right)"
-	item_paths = list("MET-1")
+	item_paths = list("mauxite")
 	item_amounts = list(3)
 	item_outputs = list(/obj/item/parts/robot_parts/leg/right/light)
 	time = 8 SECONDS
@@ -1393,7 +1393,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/robo_leg_l_light
 	name = "Light Cyborg Leg (Left)"
-	item_paths = list("MET-1")
+	item_paths = list("mauxite")
 	item_amounts = list(3)
 	item_outputs = list(/obj/item/parts/robot_parts/leg/left/light)
 	time = 8 SECONDS
@@ -1402,7 +1402,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/robo_leg_treads
 	name = "Cyborg Treads"
-	item_paths = list("MET-2","CON-1")
+	item_paths = list("MET-2","pharosium")
 	item_amounts = list(12,6)
 	item_outputs = list(/obj/item/parts/robot_parts/leg/left/treads, /obj/item/parts/robot_parts/leg/right/treads)
 	time = 15 SECONDS
@@ -1411,7 +1411,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/robo_module
 	name = "Blank Cyborg Module"
-	item_paths = list("CON-1","ALL")
+	item_paths = list("pharosium","ALL")
 	item_amounts = list(2,3)
 	item_outputs = list(/obj/item/robot_module)
 	time = 40 SECONDS
@@ -1420,7 +1420,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/powercell
 	name = "Power Cell"
-	item_paths = list("MET-1","CON-1","ALL")
+	item_paths = list("mauxite","pharosium","ALL")
 	item_amounts = list(4,4,4)
 	item_outputs = list(/obj/item/cell/supercell)
 	time = 30 SECONDS
@@ -1429,7 +1429,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/powercellE
 	name = "Erebite Power Cell"
-	item_paths = list("MET-1","ALL","erebite")
+	item_paths = list("mauxite","ALL","erebite")
 	item_amounts = list(4,4,2)
 	item_outputs = list(/obj/item/cell/erebite)
 	time = 45 SECONDS
@@ -1438,7 +1438,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/powercellC
 	name = "Cerenkite Power Cell"
-	item_paths = list("MET-1","ALL","cerenkite")
+	item_paths = list("mauxite","ALL","cerenkite")
 	item_amounts = list(4,4,2)
 	item_outputs = list(/obj/item/cell/cerenkite)
 	time = 45 SECONDS
@@ -1465,7 +1465,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/ai_interface
 	name = "AI Interface Board"
-	item_paths = list("MET-2","CON-1","CRY-1")
+	item_paths = list("MET-2","pharosium","molitz")
 	item_amounts = list(3,5,2)
 	item_outputs = list(/obj/item/ai_interface)
 	time = 35 SECONDS
@@ -1474,7 +1474,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/latejoin_brain
 	name = "Spontaneous Intelligence Creation Core"
-	item_paths = list("MET-1","CON-1","ALL")
+	item_paths = list("mauxite","pharosium","ALL")
 	item_amounts = list(6,5,3)
 	item_outputs = list(/obj/item/organ/brain/latejoin)
 	time = 35 SECONDS
@@ -1483,7 +1483,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/shell_cell
 	name = "AI Shell Power Cell"
-	item_paths = list("MET-1","CON-1","ALL")
+	item_paths = list("mauxite","pharosium","ALL")
 	item_amounts = list(2,2,1)
 	item_outputs = list(/obj/item/cell/shell_cell)
 	time = 20 SECONDS
@@ -1492,7 +1492,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/flash
 	name = "Flash"
-	item_paths = list("CRY-1","CON-1")
+	item_paths = list("molitz","pharosium")
 	item_amounts = list(2,2)
 	item_outputs = list(/obj/item/device/flash)
 	time = 15 SECONDS
@@ -1503,7 +1503,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/implanter
 	name = "Implanter"
-	item_paths = list("MET-1")
+	item_paths = list("mauxite")
 	item_amounts = list(1)
 	item_outputs = list(/obj/item/implanter)
 	time = 3 SECONDS
@@ -1512,7 +1512,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/secbot
 	name = "Security Drone"
-	item_paths = list("MET-2","CON-2","POW-1")
+	item_paths = list("MET-2","claretine","plasmastone")
 	item_amounts = list(30,20,20)
 	item_outputs = list(/mob/living/critter/robotic/bot/securitron)
 	time = 120 SECONDS
@@ -1521,7 +1521,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/floorbot
 	name = "Construction Drone"
-	item_paths = list("MET-1","CON-1","ALL")
+	item_paths = list("mauxite","pharosium","ALL")
 	item_amounts = list(15,10,5)
 	item_outputs = list(/obj/machinery/bot/floorbot)
 	time = 60 SECONDS
@@ -1530,7 +1530,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/medbot
 	name = "Medical Drone"
-	item_paths = list("MET-1","CON-1","POW-1")
+	item_paths = list("mauxite","pharosium","plasmastone")
 	item_amounts = list(20,15,5)
 	item_outputs = list(/obj/machinery/bot/medbot)
 	time = 90 SECONDS
@@ -1539,7 +1539,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/firebot
 	name = "Firefighting Drone"
-	item_paths = list("MET-1","CON-1","ALL")
+	item_paths = list("mauxite","pharosium","ALL")
 	item_amounts = list(15,10,5)
 	item_outputs = list(/obj/machinery/bot/firebot)
 	time = 60 SECONDS
@@ -1548,7 +1548,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/cleanbot
 	name = "Sanitation Drone"
-	item_paths = list("MET-1","CON-1","ALL")
+	item_paths = list("mauxite","pharosium","ALL")
 	item_amounts = list(15,10,5)
 	item_outputs = list(/obj/machinery/bot/cleanbot)
 	time = 60 SECONDS
@@ -1557,7 +1557,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/digbot
 	name = "Mining Drone"
-	item_paths = list("MET-1","MET-2","CON-1","ALL")
+	item_paths = list("mauxite","MET-2","pharosium","ALL")
 	item_amounts = list(15,5,10,5)
 	item_outputs = list(/obj/machinery/bot/mining)
 	time = 0 SECONDS
@@ -1566,7 +1566,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/robup_jetpack
 	name = "Propulsion Upgrade"
-	item_paths = list("CON-1","MET-1")
+	item_paths = list("pharosium","mauxite")
 	item_amounts = list(3,5)
 	item_outputs = list(/obj/item/roboupgrade/jetpack)
 	time = 60 SECONDS
@@ -1575,7 +1575,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/robup_speed
 	name = "Speed Upgrade"
-	item_paths = list("CON-1","CRY-1")
+	item_paths = list("pharosium","molitz")
 	item_amounts = list(3,5)
 	item_outputs = list(/obj/item/roboupgrade/speed)
 	time = 60 SECONDS
@@ -1584,7 +1584,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/robup_recharge
 	name = "Recharge Pack"
-	item_paths = list("CON-1")
+	item_paths = list("pharosium")
 	item_amounts = list(5)
 	item_outputs = list(/obj/item/roboupgrade/rechargepack)
 	time = 60 SECONDS
@@ -1593,7 +1593,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/robup_repairpack
 	name = "Repair Pack"
-	item_paths = list("CON-1")
+	item_paths = list("pharosium")
 	item_amounts = list(5)
 	item_outputs = list(/obj/item/roboupgrade/repairpack)
 	time = 60 SECONDS
@@ -1602,7 +1602,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/robup_physshield
 	name = "Force Shield Upgrade"
-	item_paths = list("CON-2", "MET-2", "POW-2")
+	item_paths = list("claretine", "MET-2", "cerenkite")
 	item_amounts = list(2,10,2)
 	item_outputs = list(/obj/item/roboupgrade/physshield)
 	time = 90 SECONDS
@@ -1611,7 +1611,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/robup_fireshield
 	name = "Heat Shield Upgrade"
-	item_paths = list("CON-2","CRY-1")
+	item_paths = list("claretine","molitz")
 	item_amounts = list(2,10)
 	item_outputs = list(/obj/item/roboupgrade/fireshield)
 	time = 90 SECONDS
@@ -1620,7 +1620,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/robup_aware
 	name = "Recovery Upgrade"
-	item_paths = list("CON-2","CRY-1","CON-1")
+	item_paths = list("claretine","molitz","pharosium")
 	item_amounts = list(2,5,5)
 	item_outputs = list(/obj/item/roboupgrade/aware)
 	time = 90 SECONDS
@@ -1629,7 +1629,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/robup_efficiency
 	name = "Efficiency Upgrade"
-	item_paths = list("DEN-1","CON-2")
+	item_paths = list("uqill","claretine")
 	item_amounts = list(3,10)
 	item_outputs = list(/obj/item/roboupgrade/efficiency)
 	time = 120 SECONDS
@@ -1638,7 +1638,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/robup_repair
 	name = "Self-Repair Upgrade"
-	item_paths = list("DEN-1","MET-3")
+	item_paths = list("uqill","bohrum")
 	item_amounts = list(3,10)
 	item_outputs = list(/obj/item/roboupgrade/repair)
 	time = 120 SECONDS
@@ -1647,7 +1647,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/robup_teleport
 	name = "Teleport Upgrade"
-	item_paths = list("CON-1","DEN-1", "POW-2") //Okay enough roundstart teleportborgs. Fuck.
+	item_paths = list("pharosium","uqill", "cerenkite") //Okay enough roundstart teleportborgs. Fuck.
 	item_amounts = list(10,1, 10)
 	item_outputs = list(/obj/item/roboupgrade/teleport)
 	time = 120 SECONDS
@@ -1656,7 +1656,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/robup_expand
 	name = "Expansion Upgrade"
-	item_paths = list("DEN-3","POW-3")
+	item_paths = list("uqill","erebite")
 	item_amounts = list(3,1)
 	item_outputs = list(/obj/item/roboupgrade/expand)
 	time = 120 SECONDS
@@ -1665,7 +1665,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/robup_meson
 	name = "Optical Meson Upgrade"
-	item_paths = list("CRY-1","CON-1")
+	item_paths = list("molitz","pharosium")
 	item_amounts = list(2,4)
 	item_outputs = list(/obj/item/roboupgrade/opticmeson)
 	time = 90 SECONDS
@@ -1674,7 +1674,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 /* shit done be broked
 /datum/manufacture/robup_thermal
 	name = "Optical Thermal Upgrade"
-	item_paths = list("CRY-1","CON-1")
+	item_paths = list("molitz","pharosium")
 	item_amounts = list(4,8)
 	item_outputs = list(/obj/item/roboupgrade/opticthermal)
 	time = 90 SECONDS
@@ -1683,7 +1683,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 */
 /datum/manufacture/robup_healthgoggles
 	name = "ProDoc Healthgoggle Upgrade"
-	item_paths = list("CRY-1","CON-1")
+	item_paths = list("molitz","pharosium")
 	item_amounts = list(4,6)
 	item_outputs = list(/obj/item/roboupgrade/healthgoggles)
 	time = 90 SECONDS
@@ -1692,7 +1692,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/robup_sechudgoggles
 	name = "Security HUD Upgrade"
-	item_paths = list("CRY-1","CON-1")
+	item_paths = list("molitz","pharosium")
 	item_amounts = list(4,6)
 	item_outputs = list(/obj/item/roboupgrade/sechudgoggles)
 	time = 90 SECONDS
@@ -1701,7 +1701,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/robup_spectro
 	name = "Spectroscopic Scanner Upgrade"
-	item_paths = list("CRY-1","CON-1")
+	item_paths = list("molitz","pharosium")
 	item_amounts = list(4,6)
 	item_outputs = list(/obj/item/roboupgrade/spectro)
 	time = 90 SECONDS
@@ -1710,7 +1710,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/robup_visualizer
 	name = "Construction Visualizer"
-	item_paths = list("CRY-1","CON-1")
+	item_paths = list("molitz","pharosium")
 	item_amounts = list(4,6)
 	item_outputs = list(/obj/item/roboupgrade/visualizer)
 	time = 90 SECONDS
@@ -1719,7 +1719,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/implant_robotalk
 	name = "Machine Translator Implant"
-	item_paths = list("CON-1","CRY-1")
+	item_paths = list("pharosium","molitz")
 	item_amounts = list(3,3)
 	item_outputs = list(/obj/item/implantcase/robotalk)
 	time = 40 SECONDS
@@ -1729,7 +1729,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/sbradio
 	name = "Station Bounced Radio"
-	item_paths = list("CON-1","CRY-1")
+	item_paths = list("pharosium","molitz")
 	item_amounts = list(2,2)
 	item_outputs = list(/obj/item/device/radio)
 	time = 20 SECONDS
@@ -1753,7 +1753,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 #ifndef UNDERWATER_MAP
 /datum/manufacture/mining_magnet
 	name = "Mining Magnet Replacement Parts"
-	item_paths = list("DEN-1","MET-3","CON-2")
+	item_paths = list("uqill","bohrum","claretine")
 	item_amounts = list(5,30,30)
 	item_outputs = list(/obj/item/magnet_parts)
 	time = 120 SECONDS
@@ -1772,7 +1772,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/powerpick
 	name = "Powered Pick"
-	item_paths = list("MET-2","CON-1")
+	item_paths = list("MET-2","pharosium")
 	item_amounts = list(2,5)
 	item_outputs = list(/obj/item/mining_tool/power_pick)
 	time = 10 SECONDS
@@ -1781,7 +1781,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/blastchargeslite
 	name = "Low-Yield Mining Explosives (x5)"
-	item_paths = list("MET-1","CRY-1","CON-1")
+	item_paths = list("mauxite","molitz","pharosium")
 	item_amounts = list(3,3,7)
 	item_outputs = list(/obj/item/breaching_charge/mining/light)
 	time = 40 SECONDS
@@ -1790,7 +1790,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/blastcharges
 	name = "Mining Explosives (x5)"
-	item_paths = list("MET-1","CRY-1","CON-1")
+	item_paths = list("mauxite","molitz","pharosium")
 	item_amounts = list(7,7,15)
 	item_outputs = list(/obj/item/breaching_charge/mining)
 	time = 60 SECONDS
@@ -1799,7 +1799,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/powerhammer
 	name = "Power Hammer"
-	item_paths = list("DEN-1","CON-1")
+	item_paths = list("uqill","pharosium")
 	item_amounts = list(1,8)
 	item_outputs = list(/obj/item/mining_tool/powerhammer)
 	time = 70 SECONDS
@@ -1808,7 +1808,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/drill
 	name = "Laser Drill"
-	item_paths = list("MET-2","MET-3","CON-2")
+	item_paths = list("MET-2","bohrum","claretine")
 	item_amounts = list(15,7,10)
 	item_outputs = list(/obj/item/mining_tool/drill)
 	time = 90 SECONDS
@@ -1817,7 +1817,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/conc_gloves
 	name = "Concussive Gauntlets"
-	item_paths = list("MET-3","CON-2","POW-1")
+	item_paths = list("bohrum","claretine","plasmastone")
 	item_amounts = list(15,15,2)
 	item_outputs = list(/obj/item/clothing/gloves/concussive)
 	time = 120 SECONDS
@@ -1826,7 +1826,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/ore_accumulator
 	name = "Mineral Accumulator"
-	item_paths = list("MET-2","CON-2","DEN-1")
+	item_paths = list("MET-2","claretine","uqill")
 	item_amounts = list(25,15,2)
 	item_outputs = list(/obj/machinery/oreaccumulator)
 	time = 120 SECONDS
@@ -1835,7 +1835,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/eyes_meson
 	name = "Optical Meson Scanner"
-	item_paths = list("CRY-1","CON-1")
+	item_paths = list("molitz","pharosium")
 	item_amounts = list(3,2)
 	item_outputs = list(/obj/item/clothing/glasses/meson)
 	time = 10 SECONDS
@@ -1844,7 +1844,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/geoscanner
 	name = "Geological Scanner"
-	item_paths = list("MET-1","CON-1","CRY-1")
+	item_paths = list("mauxite","pharosium","molitz")
 	item_amounts = list(1,1,1)
 	item_outputs = list(/obj/item/oreprospector)
 	time = 8 SECONDS
@@ -1853,7 +1853,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/ore_scoop
 	name = "Ore Scoop"
-	item_paths = list("MET-1","CON-1","CRY-1")
+	item_paths = list("mauxite","pharosium","molitz")
 	item_names = list("Metal","Conductive Material","Crystal")
 	item_amounts = list(1,1,1)
 	item_outputs = list(/obj/item/ore_scoop)
@@ -1863,7 +1863,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/geigercounter
 	name = "Geiger Counter"
-	item_paths = list("MET-1","CON-1","CRY-1")
+	item_paths = list("mauxite","pharosium","molitz")
 	item_amounts = list(1,1,1)
 	item_outputs = list(/obj/item/device/geiger)
 	time = 8 SECONDS
@@ -1872,7 +1872,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/industrialarmor
 	name = "Industrial Space Armor Set"
-	item_paths = list("MET-3","CON-2","DEN-2")
+	item_paths = list("bohrum","claretine","uqill")
 	item_amounts = list(15,7,3)
 	item_outputs = list(/obj/item/clothing/suit/space/industrial,/obj/item/clothing/head/helmet/space/industrial)
 	time = 90 SECONDS
@@ -1881,7 +1881,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/industrialcombatarmor
 	name = "Industrial Combat Armor Set"
-	item_paths = list("MET-3","CON-2","DEN-2", "POW-1")
+	item_paths = list("bohrum","claretine","uqill", "plasmastone")
 	item_amounts = list(40,25,30,10) //Expensive for a reason
 	item_outputs = list(/obj/item/clothing/suit/space/mining_combat,/obj/item/clothing/head/helmet/space/mining_combat)
 	time = 120 SECONDS
@@ -1890,7 +1890,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/industrialboots
 	name = "Mechanised Boots"
-	item_paths = list("MET-2","CON-2","POW-1")
+	item_paths = list("MET-2","claretine","plasmastone")
 	item_amounts = list(15,7,3)
 	item_outputs = list(/obj/item/clothing/shoes/industrial)
 	time = 40 SECONDS
@@ -1899,7 +1899,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/jetpackmkII
 	name = "Jetpack MKII"
-	item_paths = list("MET-2","CON-2","POW-1")
+	item_paths = list("MET-2","claretine","plasmastone")
 	item_amounts = list(15,10,5)
 	item_outputs = list(/obj/item/tank/jetpack/jetpackmk2)
 	time = 40 SECONDS
@@ -1908,7 +1908,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/breathmask
 	name = "Breath Mask"
-	item_paths = list("FAB-1")
+	item_paths = list("fabric")
 	item_amounts = list(1)
 	item_outputs = list(/obj/item/clothing/mask/breath)
 	time = 5 SECONDS
@@ -1917,7 +1917,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/patch
 	name = "Chemical Patch"
-	item_paths = list("FAB-1")
+	item_paths = list("fabric")
 	item_amounts = list(1)
 	item_outputs = list(/obj/item/reagent_containers/patch)
 	time = 5 SECONDS
@@ -1926,7 +1926,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/mender
 	name = "Auto Mender"
-	item_paths = list("MET-2","CRY-1", "gold")
+	item_paths = list("MET-2","molitz", "gold")
 	item_amounts = list(5,4, 5)
 	item_outputs = list(/obj/item/reagent_containers/mender)
 	time = 30 SECONDS
@@ -1935,7 +1935,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/penlight
 	name = "Penlight"
-	item_paths = list("MET-1","CRY-1")
+	item_paths = list("mauxite","molitz")
 	item_amounts = list(1,1)
 	item_outputs = list(/obj/item/device/light/flashlight/penlight)
 	time = 2 SECONDS
@@ -1944,7 +1944,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/stethoscope
 	name = "Stethoscope"
-	item_paths = list("MET-1","CRY-1")
+	item_paths = list("mauxite","molitz")
 	item_amounts = list(2,1)
 	item_outputs = list(/obj/item/medical/medicaldiagnosis/stethoscope)
 	time = 5 SECONDS
@@ -1953,7 +1953,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/spacesuit
 	name = "Space Suit Set"
-	item_paths = list("FAB-1","MET-1","CRY-1")
+	item_paths = list("fabric","mauxite","molitz")
 	item_amounts = list(3,3,2)
 	item_outputs = list(/obj/item/clothing/suit/space,/obj/item/clothing/head/helmet/space)
 	time = 15 SECONDS
@@ -1962,7 +1962,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/engspacesuit
 	name = "Engineering Space Suit Set"
-	item_paths = list("FAB-1","MET-1","CRY-1")
+	item_paths = list("fabric","mauxite","molitz")
 	item_amounts = list(3,3,2)
 	item_outputs = list(/obj/item/clothing/suit/space/engineer,/obj/item/clothing/head/helmet/space/engineer)
 	time = 15 SECONDS
@@ -1971,7 +1971,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/oresatchel
 	name = "Ore Satchel"
-	item_paths = list("FAB-1")
+	item_paths = list("fabric")
 	item_amounts = list(5)
 	item_outputs = list(/obj/item/satchel/mining)
 	time = 5 SECONDS
@@ -1980,7 +1980,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/oresatchelL
 	name = "Large Ore Satchel"
-	item_paths = list("FAB-1","MET-3")
+	item_paths = list("fabric","bohrum")
 	item_amounts = list(25,3)
 	item_outputs = list(/obj/item/satchel/mining/large)
 	time = 15 SECONDS
@@ -1989,7 +1989,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/jetpack
 	name = "Jetpack"
-	item_paths = list("MET-3","CON-1")
+	item_paths = list("bohrum","pharosium")
 	item_amounts = list(2,10)
 	item_outputs = list(/obj/item/tank/jetpack)
 	time = 60 SECONDS
@@ -2000,7 +2000,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/engine
 	name = "Warp-1 Engine"
-	item_paths = list("MET-2","CON-1")
+	item_paths = list("MET-2","pharosium")
 	item_amounts = list(3,5)
 	item_outputs = list(/obj/item/shipcomponent/engine)
 	time = 10 SECONDS
@@ -2009,7 +2009,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/engine2
 	name = "Helios Mark-II Engine"
-	item_paths = list("MET-2","MET-3","CON-2")
+	item_paths = list("MET-2","bohrum","claretine")
 	item_amounts = list(20,10,15)
 	item_outputs = list(/obj/item/shipcomponent/engine/helios)
 	time = 90 SECONDS
@@ -2018,7 +2018,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/engine3
 	name = "Hermes 3.0 Engine"
-	item_paths = list("MET-3","CON-2","POW-1")
+	item_paths = list("bohrum","claretine","plasmastone")
 	item_amounts = list(20,20,5)
 	item_outputs = list(/obj/item/shipcomponent/engine/hermes)
 	time = 120 SECONDS
@@ -2028,7 +2028,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 /*	deprecated (sensors do GPS)
 /datum/manufacture/gps
 	name = "Ship's Navigation GPS"
-	item_paths = list("MET-1")
+	item_paths = list("mauxite")
 	item_amounts = list(2)
 	item_outputs = list(/obj/item/shipcomponent/secondary_system/gps)
 	time = 12 SECONDS
@@ -2046,7 +2046,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/orescoop
 	name = "Alloyed Solutions Ore Scoop/Hold"
-	item_paths = list("MET-2","CON-1")
+	item_paths = list("MET-2","pharosium")
 	item_amounts = list(20, 10)
 	item_outputs = list(/obj/item/shipcomponent/secondary_system/orescoop)
 	time = 12 SECONDS
@@ -2055,7 +2055,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/communications/mining
 	name = "NT Magnet Link Array"
-	item_paths = list("MET-2","CON-1")
+	item_paths = list("MET-2","pharosium")
 	item_amounts = list(10, 20)
 	item_outputs = list(/obj/item/shipcomponent/communications/mining)
 	time = 12 SECONDS
@@ -2064,7 +2064,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/conclave
 	name = "Conclave A-1984 Sensor System"
-	item_paths = list("POW-1","CRY-1","CON-2")
+	item_paths = list("plasmastone","molitz","claretine")
 	item_amounts = list(1,5,2)
 	item_outputs = list(/obj/item/shipcomponent/sensor/mining)
 	time = 5 SECONDS
@@ -2073,7 +2073,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/shipRCD
 	name = "Duracorp Construction Device"
-	item_paths = list("MET-3","DEN-1","CON-1")
+	item_paths = list("bohrum","uqill","pharosium")
 	item_amounts = list(5,1,10)
 	item_outputs = list(/obj/item/shipcomponent/secondary_system/cargo)
 	time = 90 SECONDS
@@ -2084,7 +2084,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/backpack
 	name = "Backpack"
-	item_paths = list("FAB-1")
+	item_paths = list("fabric")
 	item_amounts = list(8)
 	item_outputs = list(/obj/item/storage/backpack)
 	time = 10 SECONDS
@@ -2093,7 +2093,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/backpack_red
 	name = "Red Backpack"
-	item_paths = list("FAB-1")
+	item_paths = list("fabric")
 	item_amounts = list(8)
 	item_outputs = list(/obj/item/storage/backpack/red)
 	time = 10 SECONDS
@@ -2102,7 +2102,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/backpack_green
 	name = "Green Backpack"
-	item_paths = list("FAB-1")
+	item_paths = list("fabric")
 	item_amounts = list(8)
 	item_outputs = list(/obj/item/storage/backpack/green)
 	time = 10 SECONDS
@@ -2111,7 +2111,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/backpack_blue
 	name = "Blue Backpack"
-	item_paths = list("FAB-1")
+	item_paths = list("fabric")
 	item_amounts = list(8)
 	item_outputs = list(/obj/item/storage/backpack/blue)
 	time = 10 SECONDS
@@ -2120,7 +2120,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/satchel
 	name = "Satchel"
-	item_paths = list("FAB-1")
+	item_paths = list("fabric")
 	item_amounts = list(8)
 	item_outputs = list(/obj/item/storage/backpack/satchel)
 	time = 10 SECONDS
@@ -2129,7 +2129,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/satchel_red
 	name = "Red Satchel"
-	item_paths = list("FAB-1")
+	item_paths = list("fabric")
 	item_amounts = list(8)
 	item_outputs = list(/obj/item/storage/backpack/satchel/red)
 	time = 10 SECONDS
@@ -2138,7 +2138,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/satchel_green
 	name = "Green Satchel"
-	item_paths = list("FAB-1")
+	item_paths = list("fabric")
 	item_amounts = list(8)
 	item_outputs = list(/obj/item/storage/backpack/satchel/green)
 	time = 10 SECONDS
@@ -2147,7 +2147,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/satchel_blue
 	name = "Blue Satchel"
-	item_paths = list("FAB-1")
+	item_paths = list("fabric")
 	item_amounts = list(8)
 	item_outputs = list(/obj/item/storage/backpack/satchel/blue)
 	time = 10 SECONDS
@@ -2156,7 +2156,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/shoes_brown
 	name = "Brown Shoes"
-	item_paths = list("FAB-1")
+	item_paths = list("fabric")
 	item_amounts = list(2)
 	item_outputs = list(/obj/item/clothing/shoes/brown)
 	time = 2 SECONDS
@@ -2165,7 +2165,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/hat_white
 	name = "White Hat"
-	item_paths = list("FAB-1")
+	item_paths = list("fabric")
 	item_amounts = list(2)
 	item_outputs = list(/obj/item/clothing/head/white)
 	time = 2 SECONDS
@@ -2174,7 +2174,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/hat_black
 	name = "Black Hat"
-	item_paths = list("FAB-1")
+	item_paths = list("fabric")
 	item_amounts = list(2)
 	item_outputs = list(/obj/item/clothing/head/black)
 	time = 2 SECONDS
@@ -2183,7 +2183,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/hat_blue
 	name = "Blue Hat"
-	item_paths = list("FAB-1")
+	item_paths = list("fabric")
 	item_amounts = list(2)
 	item_outputs = list(/obj/item/clothing/head/blue)
 	time = 2 SECONDS
@@ -2192,7 +2192,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/hat_red
 	name = "Red Hat"
-	item_paths = list("FAB-1")
+	item_paths = list("fabric")
 	item_amounts = list(2)
 	item_outputs = list(/obj/item/clothing/head/red)
 	time = 2 SECONDS
@@ -2201,7 +2201,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/hat_green
 	name = "Green Hat"
-	item_paths = list("FAB-1")
+	item_paths = list("fabric")
 	item_amounts = list(2)
 	item_outputs = list(/obj/item/clothing/head/green)
 	time = 2 SECONDS
@@ -2210,7 +2210,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/hat_yellow
 	name = "Yellow Hat"
-	item_paths = list("FAB-1")
+	item_paths = list("fabric")
 	item_amounts = list(2)
 	item_outputs = list(/obj/item/clothing/head/yellow)
 	time = 2 SECONDS
@@ -2219,7 +2219,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/hat_pink
 	name = "Pink Hat"
-	item_paths = list("FAB-1")
+	item_paths = list("fabric")
 	item_amounts = list(2)
 	item_outputs = list(/obj/item/clothing/head/pink)
 	time = 2 SECONDS
@@ -2228,7 +2228,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/hat_orange
 	name = "Orange Hat"
-	item_paths = list("FAB-1")
+	item_paths = list("fabric")
 	item_amounts = list(2)
 	item_outputs = list(/obj/item/clothing/head/orange)
 	time = 2 SECONDS
@@ -2237,7 +2237,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/hat_tophat
 	name = "Top Hat"
-	item_paths = list("FAB-1")
+	item_paths = list("fabric")
 	item_amounts = list(3)
 	item_outputs = list(/obj/item/clothing/head/that)
 	time = 3 SECONDS
@@ -2246,7 +2246,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/hat_ltophat
 	name = "Large Top Hat"
-	item_paths = list("FAB-1")
+	item_paths = list("fabric")
 	item_amounts = list(5)
 	item_outputs = list(/obj/item/clothing/head/longtophat)
 	time = 5 SECONDS
@@ -2255,7 +2255,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/jumpsuit_white
 	name = "White Jumpsuit"
-	item_paths = list("FAB-1")
+	item_paths = list("fabric")
 	item_amounts = list(4)
 	item_outputs = list(/obj/item/clothing/under/color/white)
 	time = 5 SECONDS
@@ -2264,7 +2264,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/jumpsuit_red
 	name = "Red Jumpsuit"
-	item_paths = list("FAB-1")
+	item_paths = list("fabric")
 	item_amounts = list(4)
 	item_outputs = list(/obj/item/clothing/under/color/red)
 	time = 5 SECONDS
@@ -2273,7 +2273,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/jumpsuit_yellow
 	name = "Yellow Jumpsuit"
-	item_paths = list("FAB-1")
+	item_paths = list("fabric")
 	item_amounts = list(4)
 	item_outputs = list(/obj/item/clothing/under/color/yellow)
 	time = 5 SECONDS
@@ -2282,7 +2282,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/jumpsuit_green
 	name = "Green Jumpsuit"
-	item_paths = list("FAB-1")
+	item_paths = list("fabric")
 	item_amounts = list(4)
 	item_outputs = list(/obj/item/clothing/under/color/green)
 	time = 5 SECONDS
@@ -2291,7 +2291,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/jumpsuit_pink
 	name = "Pink Jumpsuit"
-	item_paths = list("FAB-1")
+	item_paths = list("fabric")
 	item_amounts = list(4)
 	item_outputs = list(/obj/item/clothing/under/color/pink)
 	time = 5 SECONDS
@@ -2300,7 +2300,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/jumpsuit_blue
 	name = "Blue Jumpsuit"
-	item_paths = list("FAB-1")
+	item_paths = list("fabric")
 	item_amounts = list(4)
 	item_outputs = list(/obj/item/clothing/under/color/blue)
 	time = 5 SECONDS
@@ -2309,7 +2309,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/jumpsuit_brown
 	name = "Brown Jumpsuit"
-	item_paths = list("FAB-1")
+	item_paths = list("fabric")
 	item_amounts = list(4)
 	item_outputs = list(/obj/item/clothing/under/color/brown)
 	time = 5 SECONDS
@@ -2318,7 +2318,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/jumpsuit_black
 	name = "Black Jumpsuit"
-	item_paths = list("FAB-1")
+	item_paths = list("fabric")
 	item_amounts = list(4)
 	item_outputs = list(/obj/item/clothing/under/color)
 	time = 5 SECONDS
@@ -2327,7 +2327,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/jumpsuit_orange
 	name = "Orange Jumpsuit"
-	item_paths = list("FAB-1")
+	item_paths = list("fabric")
 	item_amounts = list(4)
 	item_outputs = list(/obj/item/clothing/under/color/orange)
 	time = 5 SECONDS
@@ -2336,7 +2336,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/pride_lgbt
 	name = "LGBT Pride Jumpsuit"
-	item_paths = list("FAB-1")
+	item_paths = list("fabric")
 	item_amounts = list(4)
 	item_outputs = list(/obj/item/clothing/under/pride)
 	time = 5 SECONDS
@@ -2345,7 +2345,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/pride_ace
 	name = "Asexual Pride Jumpsuit"
-	item_paths = list("FAB-1")
+	item_paths = list("fabric")
 	item_amounts = list(4)
 	item_outputs = list(/obj/item/clothing/under/pride/ace)
 	time = 5 SECONDS
@@ -2354,7 +2354,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/pride_aro
 	name = "Aromantic Pride Jumpsuit"
-	item_paths = list("FAB-1")
+	item_paths = list("fabric")
 	item_amounts = list(4)
 	item_outputs = list(/obj/item/clothing/under/pride/aro)
 	time = 5 SECONDS
@@ -2363,7 +2363,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/pride_bi
 	name = "Bisexual Pride Jumpsuit"
-	item_paths = list("FAB-1")
+	item_paths = list("fabric")
 	item_amounts = list(4)
 	item_outputs = list(/obj/item/clothing/under/pride/bi)
 	time = 5 SECONDS
@@ -2372,7 +2372,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/pride_inter
 	name = "Intersex Pride Jumpsuit"
-	item_paths = list("FAB-1")
+	item_paths = list("fabric")
 	item_amounts = list(4)
 	item_outputs = list(/obj/item/clothing/under/pride/inter)
 	time = 5 SECONDS
@@ -2381,7 +2381,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/pride_lesb
 	name = "Lesbian Pride Jumpsuit"
-	item_paths = list("FAB-1")
+	item_paths = list("fabric")
 	item_amounts = list(4)
 	item_outputs = list(/obj/item/clothing/under/pride/lesb)
 	time = 5 SECONDS
@@ -2390,7 +2390,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/pride_nb
 	name = "Non-binary Pride Jumpsuit"
-	item_paths = list("FAB-1")
+	item_paths = list("fabric")
 	item_amounts = list(4)
 	item_outputs = list(/obj/item/clothing/under/pride/nb)
 	time = 5 SECONDS
@@ -2399,7 +2399,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/pride_pan
 	name = "Pansexual Pride Jumpsuit"
-	item_paths = list("FAB-1")
+	item_paths = list("fabric")
 	item_amounts = list(4)
 	item_outputs = list(/obj/item/clothing/under/pride/pan)
 	time = 5 SECONDS
@@ -2408,7 +2408,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/pride_poly
 	name = "Polysexual Pride Jumpsuit"
-	item_paths = list("FAB-1")
+	item_paths = list("fabric")
 	item_amounts = list(4)
 	item_outputs = list(/obj/item/clothing/under/pride/poly)
 	time = 5 SECONDS
@@ -2417,7 +2417,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/pride_trans
 	name = "Trans Pride Jumpsuit"
-	item_paths = list("FAB-1")
+	item_paths = list("fabric")
 	item_amounts = list(4)
 	item_outputs = list(/obj/item/clothing/under/pride/trans)
 	time = 5 SECONDS
@@ -2426,7 +2426,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/bedsheet
 	name = "White Bedsheet"
-	item_paths = list("FAB-1")
+	item_paths = list("fabric")
 	item_amounts = list(4)
 	item_outputs = list(/obj/item/clothing/suit/bedsheet)
 	time = 5 SECONDS
@@ -2435,7 +2435,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/bedsheet_red
 	name = "Red Bedsheet"
-	item_paths = list("FAB-1")
+	item_paths = list("fabric")
 	item_amounts = list(4)
 	item_outputs = list(/obj/item/clothing/suit/bedsheet/red)
 	time = 5 SECONDS
@@ -2444,7 +2444,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/bedsheet_orange
 	name = "Orange Bedsheet"
-	item_paths = list("FAB-1")
+	item_paths = list("fabric")
 	item_amounts = list(4)
 	item_outputs = list(/obj/item/clothing/suit/bedsheet/orange)
 	time = 5 SECONDS
@@ -2453,7 +2453,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/bedsheet_yellow
 	name = "Yellow Bedsheet"
-	item_paths = list("FAB-1")
+	item_paths = list("fabric")
 	item_amounts = list(4)
 	item_outputs = list(/obj/item/clothing/suit/bedsheet/yellow)
 	time = 5 SECONDS
@@ -2462,7 +2462,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/bedsheet_green
 	name = "Green Bedsheet"
-	item_paths = list("FAB-1")
+	item_paths = list("fabric")
 	item_amounts = list(4)
 	item_outputs = list(/obj/item/clothing/suit/bedsheet/green)
 	time = 5 SECONDS
@@ -2471,7 +2471,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/bedsheet_blue
 	name = "Blue Bedsheet"
-	item_paths = list("FAB-1")
+	item_paths = list("fabric")
 	item_amounts = list(4)
 	item_outputs = list(/obj/item/clothing/suit/bedsheet/blue)
 	time = 5 SECONDS
@@ -2480,7 +2480,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/bedsheet_pink
 	name = "Pink Bedsheet"
-	item_paths = list("FAB-1")
+	item_paths = list("fabric")
 	item_amounts = list(4)
 	item_outputs = list(/obj/item/clothing/suit/bedsheet/pink)
 	time = 5 SECONDS
@@ -2489,7 +2489,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/bedsheet_black
 	name = "Black Bedsheet"
-	item_paths = list("FAB-1")
+	item_paths = list("fabric")
 	item_amounts = list(4)
 	item_outputs = list(/obj/item/clothing/suit/bedsheet/black)
 	time = 5 SECONDS
@@ -2498,7 +2498,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/bedsheet_lgbt
 	name = "LGBT Pride Bedsheet"
-	item_paths = list("FAB-1")
+	item_paths = list("fabric")
 	item_amounts = list(4)
 	item_outputs = list(/obj/item/clothing/suit/bedsheet/gay)
 	time = 5 SECONDS
@@ -2507,7 +2507,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/bedsheet_ace
 	name = "Asexual Pride Bedsheet"
-	item_paths = list("FAB-1")
+	item_paths = list("fabric")
 	item_amounts = list(4)
 	item_outputs = list(/obj/item/clothing/suit/bedsheet/ace)
 	time = 5 SECONDS
@@ -2516,7 +2516,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/bedsheet_aro
 	name = "Aromantic Pride Bedsheet"
-	item_paths = list("FAB-1")
+	item_paths = list("fabric")
 	item_amounts = list(4)
 	item_outputs = list(/obj/item/clothing/suit/bedsheet/aro)
 	time = 5 SECONDS
@@ -2525,7 +2525,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/bedsheet_bi
 	name = "Bisexual Pride Bedsheet"
-	item_paths = list("FAB-1")
+	item_paths = list("fabric")
 	item_amounts = list(4)
 	item_outputs = list(/obj/item/clothing/suit/bedsheet/bi)
 	time = 5 SECONDS
@@ -2534,7 +2534,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/bedsheet_inter
 	name = "Intersex Pride Bedsheet"
-	item_paths = list("FAB-1")
+	item_paths = list("fabric")
 	item_amounts = list(4)
 	item_outputs = list(/obj/item/clothing/suit/bedsheet/inter)
 	time = 5 SECONDS
@@ -2543,7 +2543,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/bedsheet_lesb
 	name = "Lesbian Pride Bedsheet"
-	item_paths = list("FAB-1")
+	item_paths = list("fabric")
 	item_amounts = list(4)
 	item_outputs = list(/obj/item/clothing/suit/bedsheet/lesb)
 	time = 5 SECONDS
@@ -2552,7 +2552,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/bedsheet_nb
 	name = "Non-binary Pride Bedsheet"
-	item_paths = list("FAB-1")
+	item_paths = list("fabric")
 	item_amounts = list(4)
 	item_outputs = list(/obj/item/clothing/suit/bedsheet/nb)
 	time = 5 SECONDS
@@ -2561,7 +2561,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/bedsheet_pan
 	name = "Pansexual Pride Bedsheet"
-	item_paths = list("FAB-1")
+	item_paths = list("fabric")
 	item_amounts = list(4)
 	item_outputs = list(/obj/item/clothing/suit/bedsheet/pan)
 	time = 5 SECONDS
@@ -2570,7 +2570,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/bedsheet_poly
 	name = "Polysexual Pride Bedsheet"
-	item_paths = list("FAB-1")
+	item_paths = list("fabric")
 	item_amounts = list(4)
 	item_outputs = list(/obj/item/clothing/suit/bedsheet/poly)
 	time = 5 SECONDS
@@ -2579,7 +2579,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/bedsheet_trans
 	name = "Trans Pride Bedsheet"
-	item_paths = list("FAB-1")
+	item_paths = list("fabric")
 	item_amounts = list(4)
 	item_outputs = list(/obj/item/clothing/suit/bedsheet/trans)
 	time = 5 SECONDS
@@ -2588,7 +2588,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/suit_black
 	name = "Fancy Black Suit"
-	item_paths = list("FAB-1")
+	item_paths = list("fabric")
 	item_amounts = list(4)
 	item_outputs = list(/obj/item/clothing/under/suit)
 	time = 5 SECONDS
@@ -2597,7 +2597,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/dress_black
 	name = "Fancy Black Dress"
-	item_paths = list("FAB-1")
+	item_paths = list("fabric")
 	item_amounts = list(4)
 	item_outputs = list(/obj/item/clothing/under/suit/dress)
 	time = 5 SECONDS
@@ -2606,7 +2606,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/labcoat
 	name = "Labcoat"
-	item_paths = list("FAB-1")
+	item_paths = list("fabric")
 	item_amounts = list(4)
 	item_outputs = list(/obj/item/clothing/suit/labcoat)
 	time = 5 SECONDS
@@ -2615,7 +2615,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/scrubs_white
 	name = "White Scrubs"
-	item_paths = list("FAB-1")
+	item_paths = list("fabric")
 	item_amounts = list(4)
 	item_outputs = list(/obj/item/clothing/under/scrub)
 	time = 5 SECONDS
@@ -2624,7 +2624,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/scrubs_teal
 	name = "Teal Scrubs"
-	item_paths = list("FAB-1")
+	item_paths = list("fabric")
 	item_amounts = list(4)
 	item_outputs = list(/obj/item/clothing/under/scrub/teal)
 	time = 5 SECONDS
@@ -2633,7 +2633,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/scrubs_maroon
 	name = "Maroon Scrubs"
-	item_paths = list("FAB-1")
+	item_paths = list("fabric")
 	item_amounts = list(4)
 	item_outputs = list(/obj/item/clothing/under/scrub/maroon)
 	time = 5 SECONDS
@@ -2642,7 +2642,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/scrubs_blue
 	name = "Navy Scrubs"
-	item_paths = list("FAB-1")
+	item_paths = list("fabric")
 	item_amounts = list(4)
 	item_outputs = list(/obj/item/clothing/under/scrub/blue)
 	time = 5 SECONDS
@@ -2651,7 +2651,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/scrubs_purple
 	name = "Violet Scrubs"
-	item_paths = list("FAB-1")
+	item_paths = list("fabric")
 	item_amounts = list(4)
 	item_outputs = list(/obj/item/clothing/under/scrub/purple)
 	time = 5 SECONDS
@@ -2660,7 +2660,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/scrubs_orange
 	name = "Orange Scrubs"
-	item_paths = list("FAB-1")
+	item_paths = list("fabric")
 	item_amounts = list(4)
 	item_outputs = list(/obj/item/clothing/under/scrub/orange)
 	time = 5 SECONDS
@@ -2669,7 +2669,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/scrubs_pink
 	name = "Hot Pink Scrubs"
-	item_paths = list("FAB-1")
+	item_paths = list("fabric")
 	item_amounts = list(4)
 	item_outputs = list(/obj/item/clothing/under/scrub/pink)
 	time = 5 SECONDS
@@ -2678,7 +2678,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/medical_backpack
 	name = "Medical Backpack"
-	item_paths = list("FAB-1")
+	item_paths = list("fabric")
 	item_amounts = list(4)
 	item_outputs = list(/obj/item/storage/backpack/medic)
 	time = 5 SECONDS
@@ -2687,7 +2687,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/patient_gown
 	name = "Gown"
-	item_paths = list("FAB-1")
+	item_paths = list("fabric")
 	item_amounts = list(4)
 	item_outputs = list(/obj/item/clothing/under/patient_gown)
 	time = 5 SECONDS
@@ -2696,7 +2696,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/surgical_mask
 	name = "Sterile Mask"
-	item_paths = list("FAB-1")
+	item_paths = list("fabric")
 	item_amounts = list(1)
 	item_outputs = list(/obj/item/clothing/mask/surgical)
 	time = 5 SECONDS
@@ -2705,7 +2705,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/surgical_shield
 	name = "Surgical Face Shield"
-	item_paths = list("FAB-1")
+	item_paths = list("fabric")
 	item_amounts = list(1)
 	item_outputs = list(/obj/item/clothing/mask/surgical_shield)
 	time = 5 SECONDS
@@ -2714,7 +2714,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/eyepatch
 	name = "Medical Eyepatch"
-	item_paths = list("FAB-1")
+	item_paths = list("fabric")
 	item_amounts = list(5)
 	item_outputs = list(/obj/item/clothing/glasses/eyepatch)
 	time = 15 SECONDS
@@ -2723,7 +2723,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/blindfold
 	name = "Blindfold"
-	item_paths = list("FAB-1")
+	item_paths = list("fabric")
 	item_amounts = list(4)
 	item_outputs = list(/obj/item/clothing/glasses/blindfold)
 	time = 5 SECONDS
@@ -2732,7 +2732,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/muzzle
 	name = "Muzzle"
-	item_paths = list("FAB-1", "MET-1")
+	item_paths = list("fabric", "mauxite")
 	item_amounts = list(4, 2)
 	item_outputs = list(/obj/item/clothing/mask/muzzle)
 	time = 5 SECONDS
@@ -2741,7 +2741,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/hermes
 	name = "Offering to the Fabricator Gods"
-	item_paths = list("MET-3","CON-2","POW-3","DEN-3","FAB-1","INS-1")
+	item_paths = list("bohrum","claretine","erebite","uqill","fabric","INS-1")
 	item_amounts = list(30,30,6,1,30,30)
 	item_outputs = list(/obj/item/clothing/shoes/hermes)
 	time = 120 //suspense
@@ -2761,7 +2761,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/pod/engine
 	name = "Engine Manifold"
-	item_paths = list("MET-2","CON-1")
+	item_paths = list("MET-2","pharosium")
 	item_amounts = list(10,5)
 	item_outputs = list(/obj/item/pod/engine)
 	time = 10 SECONDS
@@ -2770,7 +2770,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/pod/boards
 	name = "Pod Circuitry"
-	item_paths = list("CRY-1","CON-1")
+	item_paths = list("molitz","pharosium")
 	item_amounts = list(5,5)
 	item_outputs = list(/obj/item/pod/boards)
 	time = 10 SECONDS
@@ -2779,7 +2779,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/pod/armor_light
 	name = "Light Pod Armor"
-	item_paths = list("MET-2","CON-1")
+	item_paths = list("MET-2","pharosium")
 	item_amounts = list(30,20)
 	item_outputs = list(/obj/item/podarmor/armor_light)
 	time = 20 SECONDS
@@ -2788,7 +2788,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/pod/armor_heavy
 	name = "Heavy Pod Armor"
-	item_paths = list("MET-2","MET-3")
+	item_paths = list("MET-2","bohrum")
 	item_amounts = list(30,20)
 	item_outputs = list(/obj/item/podarmor/armor_heavy)
 	time = 30 SECONDS
@@ -2797,7 +2797,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/pod/armor_industrial
 	name = "Industrial Pod Armor"
-	item_paths = list("MET-3","CON-2","DEN-1")
+	item_paths = list("bohrum","claretine","uqill")
 	item_amounts = list(25,10,5)
 	item_outputs = list(/obj/item/podarmor/armor_industrial)
 	time = 50 SECONDS
@@ -2806,7 +2806,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/pod/control
 	name = "Pod Control Interface"
-	item_paths = list("CRY-1","CON-1")
+	item_paths = list("molitz","pharosium")
 	item_amounts = list(10,10)
 	item_outputs = list(/obj/item/pod/control)
 	time = 10 SECONDS
@@ -2825,7 +2825,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/sub/engine
 	name = "Minisub Engine Manifold"
-	item_paths = list("MET-2","CON-1")
+	item_paths = list("MET-2","pharosium")
 	item_amounts = list(5,2)
 	item_outputs = list(/obj/item/sub/engine)
 	time = 5 SECONDS
@@ -2834,7 +2834,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/sub/boards
 	name = "Minisub Circuitry"
-	item_paths = list("CRY-1","CON-1")
+	item_paths = list("molitz","pharosium")
 	item_amounts = list(2,2)
 	item_outputs = list(/obj/item/sub/boards)
 	time = 5 SECONDS
@@ -2843,7 +2843,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/sub/control
 	name = "Minisub Control Interface"
-	item_paths = list("CRY-1","CON-1")
+	item_paths = list("molitz","pharosium")
 	item_amounts = list(5,5)
 	item_outputs = list(/obj/item/sub/control)
 	time = 5 SECONDS
@@ -2861,7 +2861,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/putt/engine
 	name = "MiniPutt Engine Manifold"
-	item_paths = list("MET-2","CON-1")
+	item_paths = list("MET-2","pharosium")
 	item_amounts = list(5,2)
 	item_outputs = list(/obj/item/putt/engine)
 	time = 5 SECONDS
@@ -2870,7 +2870,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/putt/boards
 	name = "MiniPutt Circuitry"
-	item_paths = list("CRY-1","CON-1")
+	item_paths = list("molitz","pharosium")
 	item_amounts = list(2,2)
 	item_outputs = list(/obj/item/putt/boards)
 	time = 5 SECONDS
@@ -2879,7 +2879,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/putt/control
 	name = "MiniPutt Control Interface"
-	item_paths = list("CRY-1","CON-1")
+	item_paths = list("molitz","pharosium")
 	item_amounts = list(5,5)
 	item_outputs = list(/obj/item/putt/control)
 	time = 5 SECONDS
@@ -2890,7 +2890,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/pod/weapon/mining
 	name = "Plasma Cutter System"
-	item_paths = list("POW-1","MET-3","DEN-3")
+	item_paths = list("plasmastone","bohrum","uqill")
 	item_amounts = list(10,10,20)
 	item_outputs = list(/obj/item/shipcomponent/mainweapon/mining)
 	time = 20 SECONDS
@@ -2899,7 +2899,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/pod/weapon/mining/drill
 	name = "Rock Drilling Rig"
-	item_paths = list("POW-1","MET-3","DEN-3")
+	item_paths = list("plasmastone","bohrum","uqill")
 	item_amounts = list(10,10,10)
 	item_outputs = list(/obj/item/shipcomponent/mainweapon/rockdrills)
 	time = 20 SECONDS
@@ -2908,7 +2908,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/pod/weapon/ltlaser
 	name = "Mk.1.5 Light Phasers"
-	item_paths = list("MET-2","CON-1","CRY-1")
+	item_paths = list("MET-2","pharosium","molitz")
 	item_amounts = list(15,15,15)
 	item_outputs = list(/obj/item/shipcomponent/mainweapon/phaser)
 	time = 20 SECONDS
@@ -2917,7 +2917,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/pod/lock
 	name = "Pod Locking Mechanism"
-	item_paths = list("CRY-1","CON-1")
+	item_paths = list("molitz","pharosium")
 	item_amounts = list(5,10)
 	item_outputs = list(/obj/item/shipcomponent/secondary_system/lock)
 	time = 10 SECONDS
@@ -2926,7 +2926,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/pod/sps
 	name = "Syndicate Purge System"
-	item_paths = list("MET-1","CON-1","CRY-1")
+	item_paths = list("mauxite","pharosium","molitz")
 	item_amounts = list(8,12,16)
 	item_outputs = list(/obj/item/shipcomponent/mainweapon/syndicate_purge_system)
 	time = 90 SECONDS
@@ -2935,7 +2935,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/pod/srs
 	name = "Syndicate Rewind System"
-	item_paths = list("MET-1","CON-1","CRY-1")
+	item_paths = list("mauxite","pharosium","molitz")
 	item_amounts = list(16,12,8)
 	item_outputs = list(/obj/item/shipcomponent/secondary_system/syndicate_rewind_system)
 	time = 90 SECONDS
@@ -2945,7 +2945,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/beaconkit
 	name = "Warp Beacon Frame"
-	item_paths = list("CRY-1","CON-1","MET-2")
+	item_paths = list("molitz","pharosium","MET-2")
 	item_names = list("Crystal","Conductive Material","Sturdy Metal")
 	item_amounts = list(10,10,10)
 	item_outputs = list(/obj/beaconkit)
@@ -2958,7 +2958,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/id_card
 	name = "ID card"
-	item_paths = list("CON-1","CRY-1")
+	item_paths = list("pharosium","molitz")
 	item_amounts = list(3,3)
 	item_outputs = list(/obj/item/card/id)
 	time = 5 SECONDS
@@ -2967,7 +2967,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/id_card_gold
 	name = "Gold ID card"
-	item_paths = list("REF-1", "CON-2","CRY-1")
+	item_paths = list("REF-1", "claretine","molitz")
 	item_amounts = list(5,4,3)
 	item_outputs = list(/obj/item/card/id/gold)
 	time = 30 SECONDS
@@ -2976,7 +2976,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/implant_access
 	name = "Electronic Access Implant (2 Access Charges)"
-	item_paths = list("CON-1","CRY-1")
+	item_paths = list("pharosium","molitz")
 	item_amounts = list(3,3)
 	item_outputs = list(/obj/item/implantcase/access)
 	time = 20 SECONDS
@@ -2985,7 +2985,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/implant_access_infinite
 	name = "Electronic Access Implant (Unlimited Charge)"
-	item_paths = list("CON-1","CRY-1")
+	item_paths = list("pharosium","molitz")
 	item_amounts = list(9,15)
 	item_outputs = list(/obj/item/implantcase/access/unlimited)
 	time = 60 SECONDS
@@ -2996,7 +2996,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/crate
 	name = "Crate"
-	item_paths = list("MET-1")
+	item_paths = list("mauxite")
 	item_amounts = list(5)
 	item_outputs = list(/obj/storage/crate)
 	time = 10 SECONDS
@@ -3005,7 +3005,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/packingcrate
 	name = "Random Packing Crate"
-	item_paths = list("MET-1")
+	item_paths = list("mauxite")
 	item_amounts = list(5)
 	item_outputs = list(/obj/storage/crate/packing)
 	time = 10 SECONDS
@@ -3014,7 +3014,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/pizzabox
 	name = "Pizza Box"
-	item_paths = list("MET-1")
+	item_paths = list("mauxite")
 	item_amounts = list(5)
 	item_outputs = list(/obj/storage/crate/pizza)
 	time = 10 SECONDS
@@ -3023,7 +3023,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/wooden
 	name = "Wooden Crate"
-	item_paths = list("MET-1")
+	item_paths = list("mauxite")
 	item_amounts = list(5)
 	item_outputs = list(/obj/storage/crate/wooden)
 	time = 10 SECONDS
@@ -3032,7 +3032,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/medical
 	name = "Medical Crate"
-	item_paths = list("MET-1")
+	item_paths = list("mauxite")
 	item_amounts = list(5)
 	item_outputs = list(/obj/storage/crate/medical)
 	time = 10 SECONDS
@@ -3041,7 +3041,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/biohazard
 	name = "Biohazard Crate"
-	item_paths = list("MET-1")
+	item_paths = list("mauxite")
 	item_amounts = list(5)
 	item_outputs = list(/obj/storage/crate/biohazard)
 	time = 10 SECONDS
@@ -3050,7 +3050,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/classcrate
 	name = "Class Crate"
-	item_paths = list("MET-1")
+	item_paths = list("mauxite")
 	item_amounts = list(5)
 	item_outputs = list(/obj/storage/crate/classcrate)
 	time = 10 SECONDS
@@ -3059,7 +3059,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/bluebin
 	name = "Blue Bin"
-	item_paths = list("MET-1")
+	item_paths = list("mauxite")
 	item_amounts = list(5)
 	item_outputs = list(/obj/table/folding/bin)
 	time = 10 SECONDS
@@ -3079,7 +3079,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/interdictor_rod_lambda
 	name = "Lambda Phase-Control Rod"
-	item_paths = list("MET-2","CON-1","CRY-1","INS-1")
+	item_paths = list("MET-2","pharosium","molitz","INS-1")
 	item_amounts = list(10,20,10,5)
 	item_outputs = list(/obj/item/interdictor_rod)
 	time = 20 SECONDS
@@ -3088,7 +3088,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/interdictor_rod_sigma
 	name = "Sigma Phase-Control Rod"
-	item_paths = list("MET-2","CON-2","INS-1","POW-1")
+	item_paths = list("MET-2","claretine","INS-1","plasmastone")
 	item_amounts = list(10,25,10,5)
 	item_outputs = list(/obj/item/interdictor_rod/sigma)
 	time = 20 SECONDS
@@ -3098,7 +3098,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 //////////////////////UBER-EXTREME SURVIVAL////////////////////////////////
 /datum/manufacture/armor_vest	//
 	name = "Armor Vest"
-	item_paths = list("MET-3")
+	item_paths = list("bohrum")
 	item_amounts = list(5)
 	item_outputs = list(/obj/item/clothing/suit/armor/vest)
 	time = 30 SECONDS
@@ -3116,7 +3116,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 	category = "Weapon"
 /datum/manufacture/saa_ammo	//
 	name = "Colt Ammo"
-	item_paths = list("MET-1")
+	item_paths = list("mauxite")
 	item_amounts = list(1)
 	item_outputs = list(/obj/item/ammo/bullets/c_45)
 	time = 7 SECONDS
@@ -3124,7 +3124,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 	category = "ammo"
 /datum/manufacture/clock	//
 	name = "Clock 188"
-	item_paths = list("MET-1")
+	item_paths = list("mauxite")
 	item_amounts = list(10)
 	item_outputs = list(/obj/item/gun/kinetic/clock_188)
 	time = 10 SECONDS
@@ -3132,7 +3132,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 	category = "Weapon"
 /datum/manufacture/clock_ammo	//
 	name = "Clock ammo"
-	item_paths = list("MET-1")
+	item_paths = list("mauxite")
 	item_amounts = list(3)
 	item_outputs = list(/obj/item/ammo/bullets/nine_mm_NATO)
 	time = 7 SECONDS
@@ -3141,7 +3141,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 
 /datum/manufacture/riot_shotgun	//
 	name = "Riot Shotgun"
-	item_paths = list("MET-1")
+	item_paths = list("mauxite")
 	item_amounts = list(20)
 	item_outputs = list(/obj/item/gun/kinetic/riotgun)
 	time = 20 SECONDS
@@ -3149,7 +3149,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 	category = "Weapon"
 /datum/manufacture/riot_shotgun_ammo	//
 	name = "Rubber Bullet ammo"
-	item_paths = list("MET-1")
+	item_paths = list("mauxite")
 	item_amounts = list(10)
 	item_outputs = list(/obj/item/ammo/bullets/abg)
 	time = 7 SECONDS
@@ -3157,7 +3157,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 	category = "ammo"
 /datum/manufacture/riot_launcher	//
 	name = "Riot Launcher"
-	item_paths = list("MET-1")
+	item_paths = list("mauxite")
 	item_amounts = list(12)
 	item_outputs = list(/obj/item/gun/kinetic/riot40mm)
 	time = 10 SECONDS
@@ -3165,7 +3165,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 	category = "Weapon"
 /datum/manufacture/riot_launcher_ammo_pbr	//
 	name = "Launcher PBR Ammo"
-	item_paths = list("MET-1", "CON-1", "CRY-1")
+	item_paths = list("mauxite", "pharosium", "molitz")
 	item_amounts = list(2,4,1)
 	item_outputs = list(/obj/item/ammo/bullets/pbr)
 	time = 10 SECONDS
@@ -3173,7 +3173,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 	category = "ammo"
 /datum/manufacture/riot_launcher_ammo_flashbang	//
 	name = "Launcher Flashbang Box"
-	item_paths = list("MET-1", "CON-1")
+	item_paths = list("mauxite", "pharosium")
 	item_amounts = list(2,3)
 	item_outputs = list(/obj/item/storage/box/flashbang_kit)
 	time = 10 SECONDS
@@ -3181,7 +3181,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 	category = "ammo"
 /datum/manufacture/riot_launcher_ammo_tactical	//
 	name = "Launcher Tactical Box"
-	item_paths = list("MET-2", "CON-1", "CRY-1")
+	item_paths = list("MET-2", "pharosium", "molitz")
 	item_amounts = list(5, 5, 3)
 	item_outputs = list(/obj/item/storage/box/tactical_kit)
 	time = 10 SECONDS
@@ -3189,7 +3189,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 	category = "ammo"
 /datum/manufacture/sniper	//
 	name = "Sniper"
-	item_paths = list("DEN-1","MET-3","CON-1","CRY-1")
+	item_paths = list("uqill","bohrum","pharosium","molitz")
 	item_amounts = list(2, 15, 4, 3)
 	item_outputs = list(/obj/item/gun/kinetic/sniper)
 	time = 25 SECONDS
@@ -3197,7 +3197,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 	category = "Weapon"
 /datum/manufacture/sniper_ammo	//
 	name = "Sniper Ammo"
-	item_paths = list("MET-3")
+	item_paths = list("bohrum")
 	item_amounts = list(6)
 	item_outputs = list(/obj/item/ammo/bullets/rifle_762_NATO)
 	time = 10 SECONDS
@@ -3205,7 +3205,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 	category = "ammo"
 /datum/manufacture/tac_shotgun	//
 	name = "Tactical Shotgun"
-	item_paths = list("MET-3", "CON-1")
+	item_paths = list("bohrum", "pharosium")
 	item_amounts = list(15, 5)
 	item_outputs = list(/obj/item/gun/kinetic/tactical_shotgun)
 	time = 20 SECONDS
@@ -3213,7 +3213,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 	category = "Weapon"
 /datum/manufacture/tac_shotgun_ammo	//
 	name = "Tactical Shotgun Ammo"
-	item_paths = list("MET-3")
+	item_paths = list("bohrum")
 	item_amounts = list(5)
 	item_outputs = list(/obj/item/ammo/bullets/buckshot_burst)
 	time = 7 SECONDS
@@ -3221,7 +3221,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 	category = "ammo"
 /datum/manufacture/gyrojet	//
 	name = "Gyrojet"
-	item_paths = list("DEN-1","MET-3","CON-2")
+	item_paths = list("uqill","bohrum","claretine")
 	item_amounts = list(5, 10, 6)
 	item_outputs = list(/obj/item/gun/kinetic/gyrojet)
 	time = 30 SECONDS
@@ -3229,7 +3229,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 	category = "Weapon"
 /datum/manufacture/gyrojet_ammo	//
 	name = "Gyrojet Ammo"
-	item_paths = list("MET-3", "CON-2")
+	item_paths = list("bohrum", "claretine")
 	item_amounts = list(5,2)
 	item_outputs = list(/obj/item/ammo/bullets/gyrojet)
 	time = 7 SECONDS
@@ -3238,7 +3238,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 */
 /datum/manufacture/plank	//
 	name = "Plank/Barricade"
-	item_paths = list("MET-1")
+	item_paths = list("mauxite")
 	item_amounts = list(1)
 	item_outputs = list(/obj/item/plank/anti_zombie)
 	time = 5 SECONDS
@@ -3246,7 +3246,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 	category = "Medicine"
 /datum/manufacture/brute_kit	//
 	name = "Brute Kit"
-	item_paths = list("MET-1", "CON-1")
+	item_paths = list("mauxite", "pharosium")
 	item_amounts = list(2, 2)
 	item_outputs = list(/obj/item/storage/firstaid/brute)
 	time = 10 SECONDS
@@ -3254,7 +3254,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 	category = "Medicine"
 /datum/manufacture/burn_kit	//
 	name = "Burn Kit"
-	item_paths = list("MET-1", "CON-1")
+	item_paths = list("mauxite", "pharosium")
 	item_amounts = list(2, 2)
 	item_outputs = list(/obj/item/storage/firstaid/fire)
 	time = 10 SECONDS
@@ -3262,7 +3262,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 	category = "Medicine"
 /datum/manufacture/crit_kit //
 	name = "Crit Kit"
-	item_paths = list("MET-1", "CON-1")
+	item_paths = list("mauxite", "pharosium")
 	item_amounts = list(2, 2)
 	item_outputs = list(/obj/item/storage/firstaid/crit)
 	time = 9 SECONDS
@@ -3270,7 +3270,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 	category = "Medicine"
 /datum/manufacture/empty_kit
 	name = "Empty First Aid Kit"
-	item_paths = list("MET-1")
+	item_paths = list("mauxite")
 	item_amounts = list(1)
 	item_outputs = list(/obj/item/storage/firstaid/regular/empty)
 	time = 4 SECONDS
@@ -3278,7 +3278,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 	category = "Medicine"
 /datum/manufacture/spacecillin	//
 	name = "Spacecillin"
-	item_paths = list("MET-1", "CON-1")
+	item_paths = list("mauxite", "pharosium")
 	item_amounts = list(3, 3)
 	item_outputs = list(/obj/item/reagent_containers/syringe/antiviral)
 	time = 10 SECONDS
@@ -3302,7 +3302,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 	category = "Miscellaneous"
 /datum/manufacture/cleaver	//
 	name = "Cleaver"
-	item_paths = list("MET-1")
+	item_paths = list("mauxite")
 	item_amounts = list(20)
 	item_outputs = list(/obj/item/kitchen/utensil/knife/cleaver)
 	time = 16 SECONDS
@@ -3310,7 +3310,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 	category = "Miscellaneous"
 /datum/manufacture/dsaber	//
 	name = "D-Saber"
-	item_paths = list("MET-2", "CON-1")
+	item_paths = list("MET-2", "pharosium")
 	item_amounts = list(20, 10)
 	item_outputs = list(/obj/item/sword/discount)
 	time = 20 SECONDS
@@ -3318,7 +3318,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 	category = "Miscellaneous"
 /datum/manufacture/fireaxe	//
 	name = "Fireaxe"
-	item_paths = list("MET-3", "CON-2")
+	item_paths = list("bohrum", "claretine")
 	item_amounts = list(20, 5)
 	item_outputs = list(/obj/item/fireaxe)
 	time = 20 SECONDS
@@ -3326,7 +3326,7 @@ proc/get_nice_mat_name_for_manufacturers(mat)
 	category = "Miscellaneous"
 /datum/manufacture/shovel	//
 	name = "Shovel"
-	item_paths = list("MET-3", "CON-2")
+	item_paths = list("bohrum", "claretine")
 	item_amounts = list(25, 5)
 	item_outputs = list(/obj/item/shovel)	//this is powerful)
 	time = 40 SECONDS
